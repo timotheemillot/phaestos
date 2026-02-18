@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phaistos - Compagnie de Théâtre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Animation fade-in */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Animation de brillance dorée */
+        @keyframes shine {
+            0% {
+                background-position: -400% center;
+            }
+            100% {
+                background-position: 400% center;
+            }
+        }
+
+        /* Animation de pulsation lumineuse */
+        @keyframes glow {
+            0% {
+                background-position: -200% center;
+            }
+            100% {
+                background-position: 200% center;
+            }
+        }
+
+        /* Animation de pulsation lumineuse */
+        @keyframes glow {
+            0%, 100% {
+                text-shadow:
+                    0 0 5px rgba(212, 175, 55, 0.4),
+                    0 0 10px rgba(212, 175, 55, 0.3),
+                    0 0 15px rgba(212, 175, 55, 0.2),
+                    0 5px 20px rgba(0, 0, 0, 0.7);
+            }
+            50% {
+                text-shadow:
+                    0 0 8px rgba(212, 175, 55, 0.5),
+                    0 0 15px rgba(212, 175, 55, 0.4),
+                    0 0 20px rgba(212, 175, 55, 0.3),
+                    0 5px 25px rgba(0, 0, 0, 0.8);
+            }
+        }
+
+        /* Effet de respiration */
+        @keyframes breathe {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.01);
+            }
+        }
+
+        .fade-in-title {
+            /* Gradient doré riche et animé */
+            background: linear-gradient(
+                110deg,
+                #8b6914 0%,
+                #c4941f 15%,
+                #d4af37 30%,
+                #f4e4a6 45%,
+                #ffd700 50%,
+                #f4e4a6 55%,
+                #d4af37 70%,
+                #c4941f 85%,
+                #8b6914 100%
+            );
+            background-size: 400% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+
+            /* Animations combinées */
+            animation:
+                fadeInUp 1.5s ease-out 0s 1 normal forwards,
+                shine 8s linear 2s infinite normal none,
+                glow 4s ease-in-out 1.5s infinite normal none,
+                breathe 5s ease-in-out 2.5s infinite normal none;
+
+            opacity: 0;
+            letter-spacing: 0.18em;
+            font-weight: 900;
+            position: relative;
+
+            /* Bordure dorée légère */
+            -webkit-text-stroke: 1px rgba(212, 175, 55, 0.25);
+
+            /* Filtre pour plus de netteté */
+            filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.3));
+        }
+
+        .fade-in-menu {
+            animation: fadeInUp 1.2s ease-out forwards;
+            opacity: 0;
+        }
+
+        .fade-in-menu:nth-child(1) { animation-delay: 0.8s; }
+        .fade-in-menu:nth-child(2) { animation-delay: 1.0s; }
+        .fade-in-menu:nth-child(3) { animation-delay: 1.2s; }
+        .fade-in-menu:nth-child(4) { animation-delay: 1.4s; }
+        .fade-in-menu:nth-child(5) { animation-delay: 1.6s; }
+        .fade-in-menu:nth-child(6) { animation-delay: 1.8s; }
+
+        /* Menu hover effect */
+        .menu-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .menu-link:hover {
+            color: #d4af37;
+            transform: translateX(10px);
+        }
+
+        .menu-link::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 2px;
+            background: #d4af37;
+            transition: width 0.3s ease;
+        }
+
+        .menu-link:hover::before {
+            width: 20px;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <!-- Carrousel plein écran -->
+    <section class="hero-slider">
+        <!-- Slide 1 -->
+        <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1503095396549-807759245b35?w=1920');">
+            <div class="hero-overlay"></div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=1920');">
+            <div class="hero-overlay"></div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1920');">
+            <div class="hero-overlay"></div>
+        </div>
+
+        <!-- Contenu centré -->
+        <div class="relative z-10 h-full flex flex-col items-center justify-center px-6">
+            <!-- Titre PHAESTOS -->
+            <h1 class="text-7xl md:text-9xl font-bold mb-16 golden-accent fade-in-title">PHAESTOS</h1>
+
+            <!-- Menu vertical -->
+            <nav class="flex flex-col items-center space-y-6 text-center">
+                <a href="pages/spectacles.html" class="menu-link fade-in-menu text-2xl md:text-3xl text-gray-200 hover:text-golden font-light tracking-wide">
+                    Spectacles
+                </a>
+                <a href="pages/soutenir.html" class="menu-link fade-in-menu text-2xl md:text-3xl text-gray-200 hover:text-golden font-light tracking-wide">
+                    Nous Soutenir
+                </a>
+                <a href="pages/contact.html" class="menu-link fade-in-menu text-2xl md:text-3xl text-gray-200 hover:text-golden font-light tracking-wide">
+                    Contact
+                </a>
+                <a href="pages/billetterie.html" class="menu-link fade-in-menu text-2xl md:text-3xl text-golden hover:text-yellow-400 font-semibold tracking-wide mt-4">
+                    Billetterie
+                </a>
+            </nav>
+        </div>
+
+        <!-- Indicateurs de slides -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 flex space-x-3">
+            <button class="slide-indicator w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition"></button>
+            <button class="slide-indicator w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition"></button>
+            <button class="slide-indicator w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition"></button>
+        </div>
+    </section>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
