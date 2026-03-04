@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous Soutenir - Phaestos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-sm border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="../index.html" class="text-3xl font-bold golden-accent">PHAISTOS</a>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="../index.html" class="nav-link text-gray-300 hover:text-white">Accueil</a>
+                    <a href="compagnie.html" class="nav-link text-gray-300 hover:text-white">La Compagnie</a>
+                    <a href="spectacles.html" class="nav-link text-gray-300 hover:text-white">Spectacles</a>
+                    <a href="ateliers.html" class="nav-link text-gray-300 hover:text-white">Ateliers</a>
+                    <a href="soutenir.html" class="nav-link text-white">Nous Soutenir</a>
+                    <a href="contact.html" class="nav-link text-gray-300 hover:text-white">Contact</a>
+                </div>
+
+                <a href="billetterie.html" class="hidden md:block bg-golden hover:bg-yellow-600 text-gray-900 px-6 py-2 rounded-full font-semibold transition">
+                    Billetterie
+                </a>
+
+                <button id="mobile-menu-toggle" class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-3">
+                <a href="../index.html" class="block text-gray-300 hover:text-white">Accueil</a>
+                <a href="compagnie.html" class="block text-gray-300 hover:text-white">La Compagnie</a>
+                <a href="spectacles.html" class="block text-gray-300 hover:text-white">Spectacles</a>
+                <a href="ateliers.html" class="block text-gray-300 hover:text-white">Ateliers</a>
+                <a href="soutenir.html" class="block text-white">Nous Soutenir</a>
+                <a href="contact.html" class="block text-gray-300 hover:text-white">Contact</a>
+                <a href="billetterie.html" class="block bg-golden hover:bg-yellow-600 text-gray-900 px-6 py-2 rounded-full font-semibold text-center">
+                    Billetterie
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold golden-accent mb-4">Nous Soutenir</h1>
+            <p class="text-xl text-gray-300">Participez à l'aventure Phaestos</p>
+        </div>
+    </header>
+
+    <!-- Section Nous Soutenir -->
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="max-w-5xl mx-auto">
+                <p class="text-center text-gray-300 mb-16 text-lg scroll-reveal">
+                    Votre soutien est précieux pour permettre à la compagnie de continuer à créer, transmettre et faire vivre le théâtre.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Adhésion -->
+                    <div class="bg-gray-800 rounded-lg p-8 scroll-reveal text-center">
+                        <div class="w-16 h-16 bg-golden rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Adhésion</h3>
+                        <p class="text-gray-300 mb-6">
+                            Rejoignez la compagnie en tant que membre. Lettre de motivation puis 1€ après acceptation.
+                        </p>
+                        <a href="contact.html" class="inline-block bg-golden hover:bg-yellow-600 text-gray-900 px-6 py-2 rounded-full font-semibold transition">
+                            Candidater
+                        </a>
+                    </div>
+
+                    <!-- Don -->
+                    <div class="bg-gray-800 rounded-lg p-8 scroll-reveal text-center">
+                        <div class="w-16 h-16 bg-golden rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Faire un Don</h3>
+                        <p class="text-gray-300 mb-6">
+                            Soutenez nos projets artistiques par un don ponctuel ou régulier. Membre donateur : 20€ adhésion + 20€ don.
+                        </p>
+                        <a href="#" class="inline-block bg-golden hover:bg-yellow-600 text-gray-900 px-6 py-2 rounded-full font-semibold transition">
+                            Faire un don
+                        </a>
+                    </div>
+
+                    <!-- Candidature -->
+                    <div class="bg-gray-800 rounded-lg p-8 scroll-reveal text-center">
+                        <div class="w-16 h-16 bg-golden rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Intégrer la Compagnie</h3>
+                        <p class="text-gray-300 mb-6">
+                            Artiste, technicien ou collaborateur ? Envoyez-nous votre candidature pour rejoindre l'aventure.
+                        </p>
+                        <a href="contact.html" class="inline-block bg-golden hover:bg-yellow-600 text-gray-900 px-6 py-2 rounded-full font-semibold transition">
+                            Postuler
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membres Honorifiques -->
+                <div class="mt-16 bg-gray-800 rounded-lg p-8 scroll-reveal">
+                    <h3 class="text-3xl font-semibold text-center mb-8 golden-accent">Membres Honorifiques</h3>
+                    <p class="text-center text-gray-300 mb-8">
+                        Nous remercions chaleureusement nos membres honorifiques pour leur soutien précieux.
+                    </p>
+                    <div class="bg-gray-900 rounded-lg p-8">
+                        <div class="columns-2 md:columns-4 gap-4 text-gray-300 text-center">
+                            <p class="mb-2">Jean Dupont</p>
+                            <p class="mb-2">Marie Martin</p>
+                            <p class="mb-2">Pierre Durand</p>
+                            <p class="mb-2">Sophie Bernard</p>
+                            <p class="mb-2">Luc Petit</p>
+                            <p class="mb-2">Anne Dubois</p>
+                            <p class="mb-2">Michel Laurent</p>
+                            <p class="mb-2">Claire Simon</p>
+                            <p class="mb-2">Thomas Moreau</p>
+                            <p class="mb-2">Julie Lefebvre</p>
+                            <p class="mb-2">Nicolas Garcia</p>
+                            <p class="mb-2">Émilie Roux</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold golden-accent mb-4">PHAESTOS</h3>
+                    <p class="text-gray-400">
+                        Compagnie de théâtre dédiée à la création, la transmission et l'exploration artistique.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4 golden-accent">Navigation</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="../index.html" class="hover:text-golden transition">Accueil</a></li>
+                        <li><a href="compagnie.html" class="hover:text-golden transition">La Compagnie</a></li>
+                        <li><a href="spectacles.html" class="hover:text-golden transition">Spectacles</a></li>
+                        <li><a href="ateliers.html" class="hover:text-golden transition">Ateliers</a></li>
+                        <li><a href="contact.html" class="hover:text-golden transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4 golden-accent">Légal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-golden transition">Mentions légales</a></li>
+                        <li><a href="#" class="hover:text-golden transition">Politique de confidentialité</a></li>
+                        <li><a href="#" class="hover:text-golden transition">CGV</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Compagnie Phaestos. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

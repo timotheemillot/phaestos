@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Compagnie - Phaistos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-sm border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="../index.html" class="text-3xl font-bold golden-accent">PHAISTOS</a>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="../index.html" class="nav-link text-gray-300 hover:text-white">Accueil</a>
+                    <a href="compagnie.html" class="nav-link text-white">La Compagnie</a>
+                    <a href="spectacles.html" class="nav-link text-gray-300 hover:text-white">Spectacles</a>
+                    <a href="ateliers.html" class="nav-link text-gray-300 hover:text-white">Ateliers</a>
+                    <a href="soutenir.html" class="nav-link text-gray-300 hover:text-white">Nous Soutenir</a>
+                    <a href="contact.html" class="nav-link text-gray-300 hover:text-white">Contact</a>
+                </div>
+
+                <a href="billetterie.html" class="hidden md:block bg-golden hover:bg-yellow-600 text-gray-900 px-6 py-2 rounded-full font-semibold transition">
+                    Billetterie
+                </a>
+
+                <button id="mobile-menu-toggle" class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-3">
+                <a href="../index.html" class="block text-gray-300 hover:text-white">Accueil</a>
+                <a href="compagnie.html" class="block text-white">La Compagnie</a>
+                <a href="spectacles.html" class="block text-gray-300 hover:text-white">Spectacles</a>
+                <a href="ateliers.html" class="block text-gray-300 hover:text-white">Ateliers</a>
+                <a href="soutenir.html" class="block text-gray-300 hover:text-white">Nous Soutenir</a>
+                <a href="contact.html" class="block text-gray-300 hover:text-white">Contact</a>
+                <a href="billetterie.html" class="block bg-golden hover:bg-yellow-600 text-gray-900 px-6 py-2 rounded-full font-semibold text-center">
+                    Billetterie
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold golden-accent mb-4">La Compagnie</h1>
+            <p class="text-xl text-gray-300">Notre histoire, notre vision, notre équipe</p>
+        </div>
+    </header>
+
+    <!-- Section La Compagnie -->
+    <section class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <!-- Histoire du nom -->
+                <div class="mb-20">
+                    <h2 class="text-4xl font-semibold text-center mb-12 golden-accent">L'origine du nom</h2>
+
+                    <!-- Premier bloc -->
+                    <div class="grid md:grid-cols-2 gap-12 mb-16">
+                        <div class="scroll-reveal">
+                            <img src="../images/histoire/hepha.jpg"
+                                 alt="Héphaïstos"
+                                 class="rounded-lg shadow-2xl w-full h-96 object-cover">
+                        </div>
+
+                        <div class="scroll-reveal flex flex-col justify-center">
+                            <h3 class="text-2xl font-semibold mb-4 golden-accent">Le Dieu du Feu</h3>
+                            <p class="text-gray-300 leading-relaxed mb-4">
+                                La compagnie <strong>Phaestos</strong> tire son nom du dieu grec <strong>Héphaïstos</strong>, divinité du feu et de la forge.
+                            </p>
+                            <p class="text-gray-300 leading-relaxed mb-4">
+                                Lorsque sa mère, Héra, lui donne le jour, elle trouve le nourrisson si laid qu'elle le jette aussitôt du haut de l'Olympe. Sa chute provoque une blessure qui le fera boiter toute sa vie. <em>« Héphaïstos est aussi laid que la déesse Aphrodite est belle »</em>.
+                            </p>
+                            <p class="text-gray-300 leading-relaxed">
+                                Héphaïstos est un dieu déchu, représenté à part, seul, comme un forgeron sale et boiteux. Pourtant, c'est dans cette différence que réside sa force.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Deuxième bloc -->
+                    <div class="grid md:grid-cols-2 gap-12 mb-16">
+                        <div class="scroll-reveal flex flex-col justify-center order-2 md:order-1">
+                            <h3 class="text-2xl font-semibold mb-4 golden-accent">Le Dieu Civilisateur</h3>
+                            <p class="text-gray-300 leading-relaxed mb-4">
+                                Héphaïstos n'en est pas moins le <strong>dieu civilisateur</strong>, celui qui enseigne aux hommes les arts du feu et du métal. Le dieu architecte qui dessine les plans et construit les demeures des dieux sur le Mont Olympe.
+                            </p>
+                            <p class="text-gray-300 leading-relaxed mb-4">
+                                De ses mains habiles naissent les outils, les armes, les sandales ailées d'Hermès, le bouclier d'Achille. Il met son talent au service de tous, dieux comme mortels.
+                            </p>
+                            <p class="text-gray-300 leading-relaxed">
+                                C'est aussi un dieu capable de <strong>donner vie</strong> à des êtres qu'il imagine, modèle et façonne.
+                            </p>
+                        </div>
+
+                        <div class="scroll-reveal order-1 md:order-2">
+                            <img src="../images/histoire/roof.jpg"
+                                 alt="Architecture"
+                                 class="rounded-lg shadow-2xl w-full h-96 object-cover">
+                        </div>
+                    </div>
+
+                    <!-- Troisième bloc -->
+                    <div class="grid md:grid-cols-2 gap-12 mb-16">
+                        <div class="scroll-reveal">
+                            <img src="../images/histoire/lion.jpg"
+                                 alt="Le retour victorieux"
+                                 class="rounded-lg shadow-2xl w-full h-96 object-cover">
+                        </div>
+
+                        <div class="scroll-reveal flex flex-col justify-center">
+                            <h3 class="text-2xl font-semibold mb-4 golden-accent">La Flamme qui Brille</h3>
+                            <p class="text-gray-300 leading-relaxed mb-4">
+                                Dès Homère, le nom d'Héphaïstos est utilisé par métonymie pour désigner le feu lui-même. Son nom est rattaché au feu des artisans, mais aussi au feu du foyer — souvent décrit comme faible et démuni, dont la survie dépend de celui qui l'entretient.
+                            </p>
+                            <p class="text-gray-300 leading-relaxed">
+                                Étymologiquement, les anciens expliquaient le nom d'Héphaïstos comme <em>« ce(lui) qui brûle, qui est allumé »</em> ou par <em>« briller »</em>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Quatrième bloc -->
+                    <div class="grid md:grid-cols-2 gap-12 mb-16">
+                        <div class="scroll-reveal flex flex-col justify-center order-2 md:order-1">
+                            <h3 class="text-2xl font-semibold mb-4 golden-accent">Le Retour Victorieux</h3>
+                            <p class="text-gray-300 leading-relaxed mb-4">
+                                Exclu, grandissant quasiment seul, Héphaïstos n'a eu que sa confiance en lui et ses capacités de création. Il revient en préparant un piège — un trône d'or pour Héra — sans blesser personne.
+                            </p>
+                            <p class="text-gray-300 leading-relaxed mb-4">
+                                Par son ingéniosité, il parvient à regagner le Mont Olympe victorieux, accepté par ses pairs, et même marié à la déesse de la beauté.
+                            </p>
+                            <p class="text-gray-300 leading-relaxed italic">
+                                J'ai choisi le diminutif de son nom pour représenter la compagnie. Car même si Héphaïstos est peu connu, il reste présent dans notre culture. L'idée est de rappeler les sonorités et la symbolique de son nom, tout en nous en détachant pour créer notre propre histoire. Nos propres mythes.
+                            </p>
+                        </div>
+
+                        <div class="scroll-reveal order-1 md:order-2">
+                            <img src="../images/histoire/hepha2.jpg"
+                                 alt="Héphaïstos au travail"
+                                 class="rounded-lg shadow-2xl w-full h-96 object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Membres de la compagnie -->
+                <div class="scroll-reveal">
+                    <h2 class="text-4xl font-semibold text-center mb-12 golden-accent">Les Artistes</h2>
+                    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                        <!-- Juliette -->
+                        <div class="card-hover bg-gray-900 rounded-lg overflow-hidden relative group">
+                            <img src="../membres/juliette/juliette.jpg"
+                                 alt="Juliette Ganay"
+                                 class="w-full object-cover">
+                            <div class="p-6">
+                                <h4 class="text-xl font-semibold mb-2">Juliette Ganay</h4>
+                                <p class="text-gray-400 text-sm mb-2">Comédienne</p>
+                                <p class="text-gray-300 text-sm member-short-desc">
+                                    Passionnée de théâtre, formée au Cours Florent.
+                                </p>
+                                <div class="member-full-desc hidden group-hover:block absolute inset-0 bg-gray-900 bg-opacity-95 p-6 overflow-y-auto transition-all duration-300">
+                                    <h4 class="text-xl font-semibold mb-2 golden-accent">Juliette Ganay</h4>
+                                    <p class="text-gray-400 text-sm mb-4">Comédienne</p>
+                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">
+                                        Passionnée de théâtre depuis sa découverte, à l'âge de 6 ans, elle décide de se former au Cours Florent. À 21 ans, elle sort de l'école avide de challenges, de dépassement et de rencontres.
+                                    </p>
+                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">
+                                        Le travail collectif et les connexions émotionnelles qui en découlent sont ce qu'elle préfère. Juliette se passionne aussi pour la gymnastique artistique, qu'elle a pratiqué pendant plus de 10 ans, le dessin et la danse contemporaine.
+                                    </p>
+                                    <p class="text-gray-400 text-xs mt-4">
+                                        Instagram : @jujugny
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Margot -->
+                        <div class="card-hover bg-gray-900 rounded-lg overflow-hidden relative group">
+                            <img src="../membres/margot/margot.jpg"
+                                 alt="Margot"
+                                 class="w-full object-cover">
+                            <div class="p-6">
+                                <h4 class="text-xl font-semibold mb-2">Margot</h4>
+                                <p class="text-gray-400 text-sm mb-2">Comédienne & Metteuse en scène</p>
+                                <p class="text-gray-300 text-sm member-short-desc">
+                                    Formée au Conservatoire Jean Wiener, capoeiriste passionnée.
+                                </p>
+                                <div class="member-full-desc hidden group-hover:block absolute inset-0 bg-gray-900 bg-opacity-95 p-6 overflow-y-auto transition-all duration-300">
+                                    <h4 class="text-xl font-semibold mb-2 golden-accent">Margot</h4>
+                                    <p class="text-gray-400 text-sm mb-4">Comédienne & Metteuse en scène</p>
+                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">
+                                        Initiée au théâtre dès l'enfance, elle complète sa formation professionnelle au Théâtre de l'Atalante, puis au Conservatoire d'art dramatique Jean Wiener auprès de Sarah Oppenheim, en enrichissant son parcours par des stages intensifs de théâtre, de danse, de masque et de capoeira.
+                                    </p>
+                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">
+                                        Titulaire d'un BPJEPS et formatrice BAFA, elle a exercé comme animatrice socioculturelle et directrice adjointe au sein de différentes structures d'éducation populaires, notamment auprès d'enfants hospitalisés.
+                                    </p>
+                                    <p class="text-gray-300 text-sm leading-relaxed">
+                                        Parallèlement, Margot pratique la capoeira depuis 2004 et a animé des ateliers destinés à des jeunes en situation de handicap.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold golden-accent mb-4">PHAISTOS</h3>
+                    <p class="text-gray-400">
+                        Compagnie de théâtre dédiée à la création, la transmission et l'exploration artistique.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4 golden-accent">Navigation</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="../index.html" class="hover:text-golden transition">Accueil</a></li>
+                        <li><a href="compagnie.html" class="hover:text-golden transition">La Compagnie</a></li>
+                        <li><a href="spectacles.html" class="hover:text-golden transition">Spectacles</a></li>
+                        <li><a href="ateliers.html" class="hover:text-golden transition">Ateliers</a></li>
+                        <li><a href="contact.html" class="hover:text-golden transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4 golden-accent">Légal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-golden transition">Mentions légales</a></li>
+                        <li><a href="#" class="hover:text-golden transition">Politique de confidentialité</a></li>
+                        <li><a href="#" class="hover:text-golden transition">CGV</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Compagnie Phaistos. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

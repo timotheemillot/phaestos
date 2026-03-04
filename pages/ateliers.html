@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ateliers - Phaestos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-sm border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="../index.html" class="text-3xl font-bold golden-accent">PHAESTOS</a>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="../index.html" class="nav-link text-gray-300 hover:text-white">Accueil</a>
+                    <a href="compagnie.html" class="nav-link text-gray-300 hover:text-white">La Compagnie</a>
+                    <a href="spectacles.html" class="nav-link text-gray-300 hover:text-white">Spectacles</a>
+                    <a href="ateliers.html" class="nav-link text-white">Ateliers</a>
+                    <a href="soutenir.html" class="nav-link text-gray-300 hover:text-white">Nous Soutenir</a>
+                    <a href="contact.html" class="nav-link text-gray-300 hover:text-white">Contact</a>
+                </div>
+
+                <a href="billetterie.html" class="hidden md:block bg-golden hover:bg-yellow-600 text-gray-900 px-6 py-2 rounded-full font-semibold transition">
+                    Billetterie
+                </a>
+
+                <button id="mobile-menu-toggle" class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-3">
+                <a href="../index.html" class="block text-gray-300 hover:text-white">Accueil</a>
+                <a href="compagnie.html" class="block text-gray-300 hover:text-white">La Compagnie</a>
+                <a href="spectacles.html" class="block text-gray-300 hover:text-white">Spectacles</a>
+                <a href="ateliers.html" class="block text-white">Ateliers</a>
+                <a href="soutenir.html" class="block text-gray-300 hover:text-white">Nous Soutenir</a>
+                <a href="contact.html" class="block text-gray-300 hover:text-white">Contact</a>
+                <a href="billetterie.html" class="block bg-golden hover:bg-yellow-600 text-gray-900 px-6 py-2 rounded-full font-semibold text-center">
+                    Billetterie
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold golden-accent mb-4">Ateliers & Transmission</h1>
+            <p class="text-xl text-gray-300">Participez à nos activités de formation théâtrale</p>
+        </div>
+    </header>
+
+    <!-- Section Ateliers -->
+    <section class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <p class="text-center text-gray-300 mb-16 text-lg scroll-reveal">
+                    Au-delà de la création de spectacles, la compagnie Phaestos s'engage dans la transmission et propose divers ateliers tout au long de l'année.
+                </p>
+
+                <div class="space-y-8">
+                    <!-- Atelier 1 -->
+                    <div class="bg-gray-900 rounded-lg p-8 scroll-reveal">
+                        <div class="flex flex-col md:flex-row gap-8">
+                            <img src="https://images.unsplash.com/photo-1503095396549-807759245b35?w=400"
+                                 alt="Atelier"
+                                 class="w-full md:w-1/3 h-48 object-cover rounded-lg">
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-semibold mb-3 golden-accent">Atelier de Création Théâtrale</h3>
+                                <p class="text-gray-300 mb-4">
+                                    Un espace de création collective où chacun peut explorer son potentiel artistique. Nous travaillons l'improvisation, l'écriture de plateau et la mise en scène.
+                                </p>
+                                <div class="flex flex-wrap gap-4 text-sm text-gray-400">
+                                    <span><strong>Public :</strong> Adultes</span>
+                                    <span><strong>Horaires :</strong> Mardis 19h-21h</span>
+                                    <span><strong>Lieu :</strong> Salle de répétition</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Atelier 2 -->
+                    <div class="bg-gray-900 rounded-lg p-8 scroll-reveal">
+                        <div class="flex flex-col md:flex-row gap-8">
+                            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400"
+                                 alt="Atelier lecture"
+                                 class="w-full md:w-1/3 h-48 object-cover rounded-lg">
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-semibold mb-3 golden-accent">Atelier Lecture à Voix Haute</h3>
+                                <p class="text-gray-300 mb-4">
+                                    Découvrez le plaisir de lire des textes de théâtre contemporain et classique. Un atelier convivial pour explorer la voix, le rythme et l'interprétation.
+                                </p>
+                                <div class="flex flex-wrap gap-4 text-sm text-gray-400">
+                                    <span><strong>Public :</strong> Tous niveaux</span>
+                                    <span><strong>Horaires :</strong> Jeudis 18h30-20h</span>
+                                    <span><strong>Lieu :</strong> Bibliothèque municipale</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Atelier 3 -->
+                    <div class="bg-gray-900 rounded-lg p-8 scroll-reveal">
+                        <div class="flex flex-col md:flex-row gap-8">
+                            <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=400"
+                                 alt="Atelier jeunesse"
+                                 class="w-full md:w-1/3 h-48 object-cover rounded-lg">
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-semibold mb-3 golden-accent">Atelier Jeunesse</h3>
+                                <p class="text-gray-300 mb-4">
+                                    Initiation ludique au théâtre pour les plus jeunes. Jeux théâtraux, expression corporelle et vocale dans une ambiance bienveillante et créative.
+                                </p>
+                                <div class="flex flex-wrap gap-4 text-sm text-gray-400">
+                                    <span><strong>Public :</strong> 8-14 ans</span>
+                                    <span><strong>Horaires :</strong> Mercredis 14h-16h</span>
+                                    <span><strong>Lieu :</strong> Salle de répétition</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inscription -->
+                <div class="mt-16 text-center scroll-reveal">
+                    <h2 class="text-3xl font-semibold mb-6 golden-accent">Vous souhaitez participer ?</h2>
+                    <p class="text-gray-300 mb-8">Contactez-nous pour vous inscrire ou obtenir plus d'informations sur nos ateliers.</p>
+                    <a href="contact.html" class="inline-block bg-golden hover:bg-yellow-600 text-gray-900 px-8 py-3 rounded-full font-semibold text-lg transition">
+                        Nous contacter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold golden-accent mb-4">PHAISTOS</h3>
+                    <p class="text-gray-400">
+                        Compagnie de théâtre dédiée à la création, la transmission et l'exploration artistique.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4 golden-accent">Navigation</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="../index.html" class="hover:text-golden transition">Accueil</a></li>
+                        <li><a href="compagnie.html" class="hover:text-golden transition">La Compagnie</a></li>
+                        <li><a href="spectacles.html" class="hover:text-golden transition">Spectacles</a></li>
+                        <li><a href="ateliers.html" class="hover:text-golden transition">Ateliers</a></li>
+                        <li><a href="contact.html" class="hover:text-golden transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4 golden-accent">Légal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-golden transition">Mentions légales</a></li>
+                        <li><a href="#" class="hover:text-golden transition">Politique de confidentialité</a></li>
+                        <li><a href="#" class="hover:text-golden transition">CGV</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Compagnie Phaestos. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
