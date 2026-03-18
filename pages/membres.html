@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membres - Phaestos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-sm border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-center relative">
+                <a href="../index.html" class="absolute left-6 text-3xl font-bold golden-accent">PHAESTOS</a>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="../index.html" class="nav-link text-gray-300 hover:text-white">Accueil</a>
+                    <a href="compagnie.html" class="nav-link text-gray-300 hover:text-white">La Compagnie</a>
+                    <a href="spectacles.html" class="nav-link text-gray-300 hover:text-white">Spectacles</a>
+                    <a href="ateliers.html" class="nav-link text-gray-300 hover:text-white">Ateliers</a>
+                    <a href="membres.html" class="nav-link text-white">Membres</a>
+                    <a href="soutenir.html" class="nav-link text-gray-300 hover:text-white">Nous Soutenir</a>
+                    <a href="contact.html" class="nav-link text-gray-300 hover:text-white">Contact</a>
+                </div>
+
+                <button id="mobile-menu-toggle" class="absolute right-6 md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-3">
+                <a href="../index.html" class="block text-gray-300 hover:text-white">Accueil</a>
+                <a href="compagnie.html" class="block text-gray-300 hover:text-white">La Compagnie</a>
+                <a href="spectacles.html" class="block text-gray-300 hover:text-white">Spectacles</a>
+                <a href="ateliers.html" class="block text-gray-300 hover:text-white">Ateliers</a>
+                <a href="membres.html" class="block text-white">Membres</a>
+                <a href="soutenir.html" class="block text-gray-300 hover:text-white">Nous Soutenir</a>
+                <a href="contact.html" class="block text-gray-300 hover:text-white">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold golden-accent mb-4">Les Membres</h1>
+            <p class="text-xl text-gray-300">Artistes et soutiens qui font vivre la compagnie</p>
+        </div>
+    </header>
+
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="scroll-reveal bg-gradient-to-t from-gray-900 via-gray-800 to-transparent p-12 rounded-2xl mb-16">
+                    <h2 class="text-4xl font-semibold text-center mb-4 golden-accent">Les Artistes</h2>
+                    <p class="text-center text-gray-300 max-w-3xl mx-auto mb-12">
+                        Les artistes de Phaestos portent les créations de la compagnie entre jeu, mise en scène et recherche collective.
+                    </p>
+
+                    <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                        <div class="card-hover bg-gray-900 rounded-lg overflow-hidden relative group">
+                            <img src="../membres/juliette/juliette.jpg"
+                                 alt="Juliette Ganay"
+                                 class="w-full object-cover">
+                            <div class="p-6">
+                                <h4 class="text-xl font-semibold mb-2">Juliette Ganay</h4>
+                                <p class="text-gray-400 text-sm mb-2">Comédienne</p>
+                                <p class="text-gray-300 text-sm member-short-desc">
+                                    Passionnée de théâtre, formée au Cours Florent.
+                                </p>
+                                <div class="member-full-desc hidden group-hover:block absolute inset-0 bg-gray-900 bg-opacity-95 p-6 overflow-y-auto transition-all duration-300">
+                                    <h4 class="text-xl font-semibold mb-2 golden-accent">Juliette Ganay</h4>
+                                    <p class="text-gray-400 text-sm mb-4">Comédienne</p>
+                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">
+                                        Passionnée de théâtre depuis sa découverte, à l'âge de 6 ans, elle décide de se former au Cours Florent. À 21 ans, elle sort de l'école avide de challenges, de dépassement et de rencontres.
+                                    </p>
+                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">
+                                        Le travail collectif et les connexions émotionnelles qui en découlent sont ce qu'elle préfère. Juliette se passionne aussi pour la gymnastique artistique, qu'elle a pratiquée pendant plus de 10 ans, le dessin et la danse contemporaine.
+                                    </p>
+                                    <p class="text-gray-400 text-xs mt-4">
+                                        Instagram : @jujugny
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-hover bg-gray-900 rounded-lg overflow-hidden relative group">
+                            <img src="../membres/anne/anne.jpg"
+                                 alt="Anne Fumeaux"
+                                 class="w-full object-cover">
+                            <div class="p-6">
+                                <h4 class="text-xl font-semibold mb-2">Anne Fumeaux</h4>
+                                <p class="text-gray-400 text-sm mb-2">Comédienne & Metteuse en scène</p>
+                                <p class="text-gray-300 text-sm member-short-desc">
+                                    Passionnée de théâtre et de cinéma, formée aux Cours Florent.
+                                </p>
+                                <div class="member-full-desc hidden group-hover:block absolute inset-0 bg-gray-900 bg-opacity-95 p-6 overflow-y-auto transition-all duration-300">
+                                    <h4 class="text-xl font-semibold mb-2 golden-accent">Anne Fumeaux</h4>
+                                    <p class="text-gray-400 text-sm mb-4">Comédienne & Metteuse en scène</p>
+                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">
+                                        Passionnée de théâtre et de cinéma, Anne Fumeaux se forme aux Cours Florent où elle découvre également un goût pour la mise en scène.
+                                    </p>
+                                    <p class="text-gray-300 text-sm leading-relaxed">
+                                        L'art lui permet de se connecter au monde et de tenter d'y apporter quelque chose.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden scroll-reveal">
+                    <div class="p-8">
+                        <div class="flex items-start gap-6 mb-6">
+                            <div class="flex-1">
+                                <h2 class="text-4xl font-semibold mb-4 golden-accent">Membres Honorifiques</h2>
+                                <p class="text-gray-300 mb-6">
+                                    Nous remercions chaleureusement nos membres honorifiques pour leur soutien précieux et leur engagement auprès de la compagnie.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-gray-900 rounded-lg p-6 hover:bg-gray-800 transition">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-1">
+                                        <h4 class="text-xl font-bold golden-accent mb-2">Timothée MILLOT</h4>
+                                        <p class="text-sm text-gray-400 mb-3">Développeur web</p>
+                                        <p class="text-gray-300 text-sm mb-3">
+                                            Création du site web de la compagnie.
+                                        </p>
+                                        <a href="https://www.linkedin.com/in/timothee-millot" target="_blank" class="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-golden transition">
+                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                            </svg>
+                                            LinkedIn
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-6">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-gray-400">
+                <a href="mentions-legales.html" class="hover:text-golden transition">Mentions légales</a>
+                <a href="politique-confidentialite.html" class="hover:text-golden transition">Politique de confidentialité</a>
+            </div>
+            <div class="pt-4 text-center text-gray-400">
+                <p>&copy; 2026 Compagnie Phaestos. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
