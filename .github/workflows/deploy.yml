@@ -9,6 +9,7 @@ jobs:
   deploy:
     name: Upload static site by FTP
     runs-on: ubuntu-latest
+    environment: github-action-deploy
 
     steps:
       - name: Checkout files
