@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistes - Phaestos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-sm border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-center relative">
+                <a href="../index.html" class="absolute left-6 text-3xl font-bold golden-accent">PHAESTOS</a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="nav-link text-gray-300 hover:text-white">Accueil</a>
+                    <a href="compagnie.html" class="nav-link text-gray-300 hover:text-white">La Compagnie</a>
+                    <a href="spectacles.html" class="nav-link text-gray-300 hover:text-white">Spectacles</a>
+                    <a href="ateliers.html" class="nav-link text-gray-300 hover:text-white">Ateliers</a>
+                    <div class="nav-dropdown">
+                        <span class="nav-link nav-link-active text-white inline-flex items-center gap-2 cursor-default">Membres<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></span>
+                        <div class="nav-dropdown-menu">
+                            <a href="artistes.html" class="dropdown-link dropdown-link-active">Artistes</a>
+                            <a href="membres-honorifiques.html" class="dropdown-link">Membres honorifiques</a>
+                            <a href="membres-donateurs.html" class="dropdown-link">Membres donateurs</a>
+                        </div>
+                    </div>
+                    <a href="soutenir.html" class="nav-link text-gray-300 hover:text-white">Nous Soutenir</a>
+                    <a href="contact.html" class="nav-link text-gray-300 hover:text-white">Contact</a>
+                </div>
+                <button id="mobile-menu-toggle" class="absolute right-6 md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-3">
+                <a href="../index.html" class="block text-gray-300 hover:text-white">Accueil</a>
+                <a href="compagnie.html" class="block text-gray-300 hover:text-white">La Compagnie</a>
+                <a href="spectacles.html" class="block text-gray-300 hover:text-white">Spectacles</a>
+                <a href="ateliers.html" class="block text-gray-300 hover:text-white">Ateliers</a>
+                <button type="button" data-submenu-toggle="mobile-members-submenu" aria-expanded="true" class="flex w-full items-center justify-between text-left text-white"><span>Membres</span><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                <div id="mobile-members-submenu" class="mobile-submenu">
+                    <a href="artistes.html" class="mobile-submenu-link mobile-submenu-link-active">Artistes</a>
+                    <a href="membres-honorifiques.html" class="mobile-submenu-link">Membres honorifiques</a>
+                    <a href="membres-donateurs.html" class="mobile-submenu-link">Membres donateurs</a>
+                </div>
+                <a href="soutenir.html" class="block text-gray-300 hover:text-white">Nous Soutenir</a>
+                <a href="contact.html" class="block text-gray-300 hover:text-white">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold golden-accent mb-4">Les Artistes</h1>
+            <p class="text-xl text-gray-300">Les voix, les corps et les imaginaires qui construisent les creations de la compagnie</p>
+        </div>
+    </header>
+
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="scroll-reveal bg-gradient-to-t from-gray-900 via-gray-800 to-transparent p-12 rounded-2xl">
+                    <h2 class="text-4xl font-semibold text-center mb-4 golden-accent">Equipe artistique</h2>
+                    <p class="text-center text-gray-300 max-w-3xl mx-auto mb-12">Entre jeu, mise en scene, ecriture et recherche collective, les artistes de Phaestos portent une pratique exigeante et vivante.</p>
+                    <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                        <div class="card-hover bg-gray-900 rounded-lg overflow-hidden relative group">
+                            <img src="../membres/juliette/juliette.jpg" alt="Juliette Ganay" class="w-full object-cover">
+                            <div class="p-6">
+                                <h4 class="text-xl font-semibold mb-2">Juliette Ganay</h4>
+                                <p class="text-gray-400 text-sm mb-2">Comedienne</p>
+                                <p class="text-gray-300 text-sm member-short-desc">Passionnee de theatre, formee au Cours Florent.</p>
+                                <div class="member-full-desc hidden group-hover:block absolute inset-0 bg-gray-900 bg-opacity-95 p-6 overflow-y-auto transition-all duration-300">
+                                    <h4 class="text-xl font-semibold mb-2 golden-accent">Juliette Ganay</h4>
+                                    <p class="text-gray-400 text-sm mb-4">Comedienne</p>
+                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">Passionnee de theatre depuis sa decouverte a l'age de 6 ans, elle decide de se former au Cours Florent. A 21 ans, elle sort de l'ecole avide de challenges, de depassement et de rencontres.</p>
+                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">Le travail collectif et les connexions emotionnelles qui en decoulent sont ce qu'elle prefere. Juliette se passionne aussi pour la gymnastique artistique, qu'elle a pratiquee pendant plus de 10 ans, le dessin et la danse contemporaine.</p>
+                                    <p class="text-gray-400 text-xs mt-4">Instagram : @jujugny</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-hover bg-gray-900 rounded-lg overflow-hidden relative group">
+                            <img src="../membres/anne/anne.jpg" alt="Anne Fumeaux" class="w-full object-cover">
+                            <div class="p-6">
+                                <h4 class="text-xl font-semibold mb-2">Anne Fumeaux</h4>
+                                <p class="text-gray-400 text-sm mb-2">Comedienne et metteuse en scene</p>
+                                <p class="text-gray-300 text-sm member-short-desc">Passionnee de theatre et de cinema, formee aux Cours Florent.</p>
+                                <div class="member-full-desc hidden group-hover:block absolute inset-0 bg-gray-900 bg-opacity-95 p-6 overflow-y-auto transition-all duration-300">
+                                    <h4 class="text-xl font-semibold mb-2 golden-accent">Anne Fumeaux</h4>
+                                    <p class="text-gray-400 text-sm mb-4">Comedienne et metteuse en scene</p>
+                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">Passionnee de theatre et de cinema, Anne Fumeaux se forme aux Cours Florent ou elle decouvre egalement un gout pour la mise en scene.</p>
+                                    <p class="text-gray-300 text-sm leading-relaxed">L'art lui permet de se connecter au monde et de tenter d'y apporter quelque chose.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-hover bg-gray-900 rounded-lg overflow-hidden relative group">
+                            <img src="../membres/mathis/mathis.JPG" alt="Mathis Meteau" class="w-full object-cover">
+                            <div class="p-6">
+                                <h4 class="text-xl font-semibold mb-2">Mathis Meteau</h4>
+                                <p class="text-gray-400 text-sm mb-2">Comedien, auteur et metteur en scene</p>
+                                <p class="text-gray-300 text-sm member-short-desc">Toujours en mouvement, avec l'envie de creer et donner vie a tout ce que l'imagination invente.</p>
+                                <div class="member-full-desc hidden group-hover:block absolute inset-0 bg-gray-900 bg-opacity-95 p-6 overflow-y-auto transition-all duration-300">
+                                    <h4 class="text-xl font-semibold mb-2 golden-accent">Mathis Meteau</h4>
+                                    <p class="text-gray-400 text-sm mb-4">Comedien, auteur et metteur en scene</p>
+                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">Avant tout comedien et acteur, mais aussi auteur, metteur en scene, createur plasticien, sportif, musicien et photographe.</p>
+                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">Toujours en mouvement, avec pour envie de creer et donner vie a tout ce que l'imagination peut inventer.</p>
+                                    <p class="text-gray-300 text-sm leading-relaxed">Sa volonte artistique est de valoriser le non-conventionnel et d'aller chercher l'inconnu, la ou la peur apparait.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-hover bg-gray-900 rounded-lg overflow-hidden relative group">
+                            <img src="../membres/mathis2/mathis2.jpg" alt="Mathis Moraine" class="w-full object-cover">
+                            <div class="p-6">
+                                <h4 class="text-xl font-semibold mb-2">Mathis Moraine</h4>
+                                <p class="text-gray-400 text-sm mb-2">Comedien</p>
+                                <p class="text-gray-300 text-sm member-short-desc">Une palette de jeu diversifiee et une vraie aisance dans les techniques de la comedie et du rythme.</p>
+                                <div class="member-full-desc hidden group-hover:block absolute inset-0 bg-gray-900 bg-opacity-95 p-6 overflow-y-auto transition-all duration-300">
+                                    <h4 class="text-xl font-semibold mb-2 golden-accent">Mathis Moraine</h4>
+                                    <p class="text-gray-400 text-sm mb-4">Comedien</p>
+                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">Acteur prolifique, reconnu pour sa modestie et sa rigueur au travail, Mathis Moraine apporte une energie singuliere a la distribution.</p>
+                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">Apres de nombreux castings, il rejoint le spectacle Attentat a la pudeur avec une palette de jeu aux couleurs diversifiees.</p>
+                                    <p class="text-gray-300 text-sm leading-relaxed">Son sens du rythme et des techniques de comedie renforce la dynamique collective de la troupe.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-hover bg-gray-900 rounded-lg overflow-hidden relative group">
+                            <div class="w-full aspect-[2/3] bg-gray-800 border-b border-gray-700 flex items-center justify-center">
+                                <span class="text-gray-500 text-sm uppercase tracking-[0.25em]">Image à venir</span>
+                            </div>
+                            <div class="p-6">
+                                <h4 class="text-xl font-semibold mb-2">Mina Lafaurie</h4>
+                                <p class="text-gray-400 text-sm mb-2">Scénographe et metteuse en scène</p>
+                                <p class="text-gray-300 text-sm member-short-desc">Diplômée en espace public, mobilité urbaine et théâtre, elle oriente sa pratique vers la scénographie.</p>
+                                <div class="member-full-desc hidden group-hover:block absolute inset-0 bg-gray-900 bg-opacity-95 p-6 overflow-y-auto transition-all duration-300">
+                                    <h4 class="text-xl font-semibold mb-2 golden-accent">Mina Lafaurie</h4>
+                                    <p class="text-gray-400 text-sm mb-4">Scénographe et metteuse en scène</p>
+                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">Diplômée d'un DN MADE mention Espace public et Mobilité urbaine ainsi que d'une licence de théâtre, Mina Lafaurie souhaite orienter sa pratique vers la scénographie.</p>
+                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">Raconter des histoires, mettre en valeur les comédiens et réfléchir à la manière de les accompagner sont des aspects qui l'attirent particulièrement.</p>
+                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">Elle s'intéresse aussi aux solutions plus pérennes et durables pour les scénographies, afin de penser autrement le théâtre.</p>
+                                    <p class="text-gray-400 text-xs mt-4">Instagram : @mina.lfr</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-hover bg-gray-900 rounded-lg overflow-hidden relative group">
+                            <img src="../membres/noe/noe.jpeg" alt="Noé Chatel" class="w-full aspect-[2/3] object-cover">
+                            <div class="p-6">
+                                <h4 class="text-xl font-semibold mb-2">Noé Chatel</h4>
+                                <p class="text-gray-400 text-sm mb-2">Danseur et couturier</p>
+                                <p class="text-gray-300 text-sm member-short-desc">Danseur versatile, toujours à explorer de nouvelles choses et repousser ses limites.</p>
+                                <div class="member-full-desc hidden group-hover:block absolute inset-0 bg-gray-900 bg-opacity-95 p-6 overflow-y-auto transition-all duration-300">
+                                    <h4 class="text-xl font-semibold mb-2 golden-accent">Noé Chatel</h4>
+                                    <p class="text-gray-400 text-sm mb-4">Danseur et couturier</p>
+                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">Danseur versatile, Noé Chatel explore toujours de nouvelles choses et repousse ses limites.</p>
+                                    <p class="text-gray-300 text-sm leading-relaxed">Il possède également des compétences techniques en couture.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 border-t border-gray-800 py-6">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-gray-400">
+                <a href="mentions-legales.html" class="hover:text-golden transition">Mentions legales</a>
+                <a href="politique-confidentialite.html" class="hover:text-golden transition">Politique de confidentialite</a>
+            </div>
+            <div class="pt-4 text-center text-gray-400"><p>&copy; 2026 Compagnie Phaestos. Tous droits reserves.</p></div>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

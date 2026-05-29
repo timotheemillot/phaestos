@@ -15,12 +15,24 @@
             <div class="flex items-center justify-center relative">
                 <a href="../index.html" class="absolute left-6 text-3xl font-bold golden-accent">PHAESTOS</a>
 
-                <div class="hidden md:flex space-x-8">
+                <div class="hidden md:flex items-center space-x-8">
                     <a href="../index.html" class="nav-link text-gray-300 hover:text-white">Accueil</a>
                     <a href="compagnie.html" class="nav-link text-gray-300 hover:text-white">La Compagnie</a>
                     <a href="spectacles.html" class="nav-link text-white">Spectacles</a>
                     <a href="ateliers.html" class="nav-link text-gray-300 hover:text-white">Ateliers</a>
-                    <a href="membres.html" class="nav-link text-gray-300 hover:text-white">Membres</a>
+                    <div class="nav-dropdown">
+                        <span class="nav-link text-gray-300 hover:text-white inline-flex items-center gap-2 cursor-default">
+                            Membres
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </span>
+                        <div class="nav-dropdown-menu">
+                            <a href="artistes.html" class="dropdown-link">Artistes</a>
+                            <a href="membres-honorifiques.html" class="dropdown-link">Membres honorifiques</a>
+                            <a href="membres-donateurs.html" class="dropdown-link">Membres donateurs</a>
+                        </div>
+                    </div>
                     <a href="soutenir.html" class="nav-link text-gray-300 hover:text-white">Nous Soutenir</a>
                     <a href="contact.html" class="nav-link text-gray-300 hover:text-white">Contact</a>
                 </div>
@@ -37,7 +49,17 @@
                 <a href="compagnie.html" class="block text-gray-300 hover:text-white">La Compagnie</a>
                 <a href="spectacles.html" class="block text-white">Spectacles</a>
                 <a href="ateliers.html" class="block text-gray-300 hover:text-white">Ateliers</a>
-                <a href="membres.html" class="block text-gray-300 hover:text-white">Membres</a>
+                <button type="button" data-submenu-toggle="mobile-members-submenu" aria-expanded="false" class="flex w-full items-center justify-between text-left text-gray-300 hover:text-white">
+                    <span>Membres</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="mobile-members-submenu" class="mobile-submenu hidden">
+                    <a href="artistes.html" class="mobile-submenu-link">Artistes</a>
+                    <a href="membres-honorifiques.html" class="mobile-submenu-link">Membres honorifiques</a>
+                    <a href="membres-donateurs.html" class="mobile-submenu-link">Membres donateurs</a>
+                </div>
                 <a href="soutenir.html" class="block text-gray-300 hover:text-white">Nous Soutenir</a>
                 <a href="contact.html" class="block text-gray-300 hover:text-white">Contact</a>
             </div>
@@ -91,12 +113,26 @@
 
                         <div class="mb-6">
                             <p class="text-gray-400"><strong>Distribution :</strong></p>
-                        <p class="text-gray-300">Anne Fumeaux, Juliette Ganay, Mélissa Fall, Mathis Moraine</p>
+                        <p class="text-gray-300">Anne Fumeaux, Juliette Ganay</p>
                         </div>
+
+                        <div class="mb-6 border-l-4 border-golden pl-4">
+                            <p class="text-gray-400"><strong>Date :</strong></p>
+                            <p class="text-gray-100 text-xl font-semibold">22 juin 2026</p>
+                        </div>
+
+                        <a href="https://www.helloasso.com/associations/compagnie-phaestos/evenements/billetterie-specacle-attentat-a-la-pudeur-au-purgatoire"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="inline-block bg-golden hover:bg-yellow-600 text-gray-900 px-8 py-3 rounded-full font-semibold text-lg transition">
+                            Réserver sur HelloAsso
+                        </a>
 
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
 
 
