@@ -1,0 +1,31 @@
+name: Deploy website
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    name: Upload static site by FTP
+    runs-on: ubuntu-latest
+    environment: github-action-deploy
+
+    steps:
+      - name: Checkout files
+        uses: actions/checkout@v4
+
+      - name: Deploy files
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ${{ secrets.FTP_REMOTE_DIR }}
+          local-dir: ./
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            **/.idea/**
+            **/README.md
