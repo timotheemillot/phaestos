@@ -11,6 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-slider {
     position: relative;
     height: 100vh;
+    height: 100svh; /* évite le saut de la barre d'adresse sur mobile */
     overflow: hidden;
 }
 
@@ -22,12 +23,22 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     opacity: 0;
     transition: opacity 2s ease-in-out;
+    background-image: var(--img-desktop);
     background-size: cover;
     background-position: center;
 }
 
 .hero-slide.active {
     opacity: 1;
+}
+
+/* Mobile : on remplace l'image par la version mobile */
+@media (max-width: 768px) {
+    .hero-slide {
+        background-image: var(--img-mobile);
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 .hero-overlay {
@@ -156,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 120px;
     padding-bottom: 60px;
     background: linear-gradient(to bottom, rgba(17, 24, 39, 0.95), rgba(31, 41, 55, 0.95)),
-                url('https://images.unsplash.com/photo-1503095396549-807759245b35?w=1920');
+    url('https://images.unsplash.com/photo-1503095396549-807759245b35?w=1920');
     background-size: cover;
     background-position: center;
 }

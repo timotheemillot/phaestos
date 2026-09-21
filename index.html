@@ -65,35 +65,56 @@
     </style>
 </head>
 <body class="bg-gray-900 text-gray-100">
-    <section class="hero-slider">
-        <div class="hero-slide active" style="background-image: url('./images/accueil/mountain-bg.jpg');"><div class="hero-overlay"></div></div>
-        <div class="hero-slide" style="background-image: url('./images/accueil/phaestos-bg.png');"><div class="hero-overlay"></div></div>
-        <div class="hero-slide slide-zoom" style="background-image: url('./images/accueil/repetition.jpg');"><div class="hero-overlay"></div></div>
+<section class="hero-slider">
+    <!--
+        Chaque slide déclare 2 images :
+        --img-desktop : affichée sur ordinateur / tablette (> 768px)
+        --img-mobile  : affichée sur téléphone (<= 768px)
+        Le navigateur ne télécharge que l'image qui correspond à l'écran.
+    -->
+    <div class="hero-slide active"
+         style="--img-desktop: url('./images/accueil/pay-aap3.jpg');
+                    --img-mobile: url('./images/accueil/mobile/pay-aap3.jpg');">
+        <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-slide"
+         style="--img-desktop: url('./images/accueil/pay-aap6-modif.jpg');
+                    --img-mobile: url('./images/accueil/mobile/por-aap1.jpg');">
+        <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-slide"
+         style="--img-desktop: url('./images/accueil/pay-aap9-modif.jpg');
+                    --img-mobile: url('./images/accueil/mobile/por-aap2.jpg');">
+        <div class="hero-overlay"></div>
+    </div>
 
-        <div class="relative z-10 h-full flex flex-col items-center justify-center px-6">
-            <h1 class="text-5xl md:text-9xl font-bold mb-16 golden-accent fade-in-title">PHAESTOS</h1>
+    <div class="relative z-10 h-full flex flex-col items-center justify-center px-6">
+        <h1 class="text-5xl md:text-9xl font-bold mb-16 golden-accent fade-in-title">PHAESTOS</h1>
 
-            <nav class="flex flex-col items-center space-y-6 text-center">
-                <a href="pages/compagnie.html" class="menu-link fade-in-menu text-xl md:text-3xl text-gray-200 hover:text-golden font-light tracking-wide">La Compagnie</a>
-                <a href="pages/spectacles.html" class="menu-link fade-in-menu relative inline-block text-xl md:text-3xl text-gray-200 hover:text-golden font-light tracking-wide">
-                    <span class="absolute left-full top-1/2 ml-3 -translate-y-1/2 whitespace-nowrap rounded-full bg-golden px-2 py-0.5 text-[0.6rem] font-semibold uppercase tracking-wide text-gray-900 md:ml-4 md:px-3 md:text-xs">✨</span>
-                    Spectacles
-                    <span class="absolute left-full top-1/2 ml-3 -translate-y-1/2 whitespace-nowrap rounded-full bg-golden px-2 py-0.5 text-[0.6rem] font-semibold uppercase tracking-wide text-gray-900 md:ml-4 md:px-3 md:text-xs">En cours</span>
-                </a>
-                <a href="pages/soutenir.html" class="menu-link fade-in-menu text-xl md:text-3xl text-gray-200 hover:text-golden font-light tracking-wide">Nous Soutenir</a>
-                <a href="pages/ateliers.html" class="menu-link fade-in-menu text-xl md:text-3xl text-gray-200 hover:text-golden font-light tracking-wide">Ateliers</a>
-                <a href="pages/membres.html" class="menu-link fade-in-menu text-xl md:text-3xl text-gray-200 hover:text-golden font-light tracking-wide">Membres</a>
-                <a href="pages/contact.html" class="menu-link fade-in-menu text-xl md:text-3xl text-gray-200 hover:text-golden font-light tracking-wide">Contact</a>
-            </nav>
-        </div>
+        <nav class="flex flex-col items-center space-y-6 text-center">
+            <a href="pages/compagnie.html" class="menu-link fade-in-menu text-xl md:text-3xl text-gray-200 hover:text-golden font-light tracking-wide">La Compagnie</a>
+            <a href="pages/spectacles.html" class="menu-link fade-in-menu relative inline-block text-xl md:text-3xl text-gray-200 hover:text-golden font-light tracking-wide">
+                Spectacles
+                <span class="absolute left-full top-1/2 ml-3 -translate-y-1/2 whitespace-nowrap rounded-full bg-golden px-2  text-[0.6rem] font-semibold uppercase tracking-wide text-gray-900 md:ml-4 md:px-3 md:py-0.5 md:text-xs">En cours</span>
+            </a>
+            <a href="pages/soutenir.html" class="menu-link fade-in-menu text-xl md:text-3xl text-gray-200 hover:text-golden font-light tracking-wide">Nous Soutenir</a>
+            <a href="pages/ateliers.html" class="menu-link fade-in-menu text-xl md:text-3xl text-gray-200 hover:text-golden font-light tracking-wide">Ateliers</a>
+            <a href="pages/membres.html" class="menu-link fade-in-menu text-xl md:text-3xl text-gray-200 hover:text-golden font-light tracking-wide">Membres</a>
+            <a href="pages/contact.html" class="menu-link fade-in-menu text-xl md:text-3xl text-gray-200 hover:text-golden font-light tracking-wide">Contact</a>
+        </nav>
+    </div>
 
-        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 flex space-x-3">
-            <button class="slide-indicator w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition"></button>
-            <button class="slide-indicator w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition"></button>
-            <button class="slide-indicator w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition"></button>
-        </div>
-    </section>
+    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 flex space-x-3">
+        <button class="slide-indicator w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition" aria-label="Image 1"></button>
+        <button class="slide-indicator w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition" aria-label="Image 2"></button>
+        <button class="slide-indicator w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition" aria-label="Image 3"></button>
+    </div>
+    <!-- Crédit photo -->
+    <p class="absolute bottom-4 right-4 z-20 text-[8px] md:text-[12px] font-thin italic text-white/50 md:text-white/40">
+        Photos par Matthieu le Jeune
+    </p>
+</section>
 
-    <script src="scripts.js"></script>
+<script src="scripts.js"></script>
 </body>
 </html>

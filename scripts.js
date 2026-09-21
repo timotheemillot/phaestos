@@ -22,11 +22,16 @@ document.querySelectorAll('[data-submenu-toggle]').forEach((toggle) => {
     });
 });
 
+/* ---------- Slider de l'accueil ----------
+   Le script ne gère que la classe "active".
+   Le choix de l'image ordi / mobile est fait uniquement en CSS
+   (variables --img-desktop / --img-mobile + media query). */
 const slides = document.querySelectorAll('.hero-slide');
 const indicators = document.querySelectorAll('.slide-indicator');
 
 if (slides.length > 0 && indicators.length > 0) {
     let currentSlide = 0;
+    let timer = null;
     const slideInterval = 5000;
 
     function showSlide(index) {
@@ -44,14 +49,21 @@ if (slides.length > 0 && indicators.length > 0) {
         showSlide(currentSlide);
     }
 
-    setInterval(nextSlide, slideInterval);
+    function startTimer() {
+        clearInterval(timer);
+        timer = setInterval(nextSlide, slideInterval);
+    }
 
     indicators.forEach((indicator, index) => {
         indicator.addEventListener('click', () => {
             currentSlide = index;
             showSlide(currentSlide);
+            startTimer(); // repart de zéro après un clic manuel
         });
     });
+
+    showSlide(currentSlide); // état initial correct des indicateurs
+    startTimer();
 }
 
 const revealElements = document.querySelectorAll('.scroll-reveal');
