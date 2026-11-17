@@ -30,6 +30,7 @@
             ]
         },
         { label: 'Nous Soutenir', href: 'pages/soutenir.html', match: ['soutenir.html'] },
+        { label: 'Presse', href: 'pages/presse.html', match: ['presse.html'] },
         { label: 'Contact', href: 'pages/contact.html', match: ['contact.html'] }
     ];
 
@@ -153,6 +154,7 @@
                             <li><a class="footer-link" href="${url('pages/spectacles.html')}">Spectacles</a></li>
                             <li><a class="footer-link" href="${url('pages/artistes.html')}">Artistes</a></li>
                             <li><a class="footer-link" href="${url('pages/soutenir.html')}">Nous Soutenir</a></li>
+                            <li><a class="footer-link" href="${url('pages/presse.html')}">Presse</a></li>
                             <li><a class="footer-link" href="${url('pages/contact.html')}">Contact</a></li>
                         </ul>
                     </nav>
