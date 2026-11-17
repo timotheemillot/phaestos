@@ -3,178 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Compagnie - Phaestos</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>La Compagnie – Phaestos</title>
+    <meta name="description" content="Phaestos est une compagnie de théâtre. Découvrez l'origine de son nom, Héphaïstos, dieu du feu et de la forge, et l'histoire de la compagnie.">
+    <meta name="theme-color" content="#111827">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Phaestos">
+    <meta property="og:title" content="La Compagnie – Phaestos">
+    <meta property="og:description" content="Phaestos est une compagnie de théâtre. Découvrez l'origine de son nom, Héphaïstos, dieu du feu et de la forge, et l'histoire de la compagnie.">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="../tailwind.css">
     <link rel="stylesheet" href="../styles.css">
+    <script src="../components.js"></script>
+    <noscript><style>.scroll-reveal{opacity:1;transform:none}</style></noscript>
 </head>
 <body class="bg-gray-900 text-gray-100">
 
-    <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-sm border-b border-gray-800">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-center relative">
-                <a href="../index.html" class="absolute left-6 text-3xl font-bold golden-accent">PHAESTOS</a>
+    <a href="#contenu" class="skip-link">Aller au contenu</a>
+    <site-header></site-header>
 
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="../index.html" class="nav-link text-gray-300 hover:text-white">Accueil</a>
-                    <a href="compagnie.html" class="nav-link text-white">La Compagnie</a>
-                    <a href="spectacles.html" class="nav-link text-gray-300 hover:text-white">Spectacles</a>
-                    <a href="ateliers.html" class="nav-link text-gray-300 hover:text-white">Ateliers</a>
-                    <div class="nav-dropdown">
-                        <span class="nav-link text-gray-300 hover:text-white inline-flex items-center gap-2 cursor-default">
-                            Membres
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </span>
-                        <div class="nav-dropdown-menu">
-                            <a href="artistes.html" class="dropdown-link">Artistes</a>
-                            <a href="membres-honorifiques.html" class="dropdown-link">Membres honorifiques</a>
-                            <a href="membres-donateurs.html" class="dropdown-link">Membres donateurs</a>
-                        </div>
-                    </div>
-                    <a href="soutenir.html" class="nav-link text-gray-300 hover:text-white">Nous Soutenir</a>
-                    <a href="contact.html" class="nav-link text-gray-300 hover:text-white">Contact</a>
-                </div>
-
-
-                <button id="mobile-menu-toggle" class="absolute right-6 md:hidden text-white">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-
-            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-3">
-                <a href="../index.html" class="block text-gray-300 hover:text-white">Accueil</a>
-                <a href="compagnie.html" class="block text-white">La Compagnie</a>
-                <a href="spectacles.html" class="block text-gray-300 hover:text-white">Spectacles</a>
-                <a href="ateliers.html" class="block text-gray-300 hover:text-white">Ateliers</a>
-                <button type="button" data-submenu-toggle="mobile-members-submenu" aria-expanded="false" class="flex w-full items-center justify-between text-left text-gray-300 hover:text-white">
-                    <span>Membres</span>
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                </button>
-                <div id="mobile-members-submenu" class="mobile-submenu hidden">
-                    <a href="artistes.html" class="mobile-submenu-link">Artistes</a>
-                    <a href="membres-honorifiques.html" class="mobile-submenu-link">Membres honorifiques</a>
-                    <a href="membres-donateurs.html" class="mobile-submenu-link">Membres donateurs</a>
-                </div>
-                <a href="soutenir.html" class="block text-gray-300 hover:text-white">Nous Soutenir</a>
-                <a href="contact.html" class="block text-gray-300 hover:text-white">Contact</a>
-            </div>
-        </div>
-    </nav>
+    <main id="contenu">
 
     <!-- Page Header -->
     <header class="page-header">
         <div class="container mx-auto px-6 text-center">
-            <h1 class="text-5xl md:text-6xl font-bold golden-accent mb-4">La Compagnie</h1>
-            <p class="text-xl text-gray-300">Notre histoire, notre vision, notre équipe</p>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold golden-accent mb-4">La Compagnie</h1>
+            <p class="text-lg md:text-xl text-gray-300">Notre histoire, notre vision, notre équipe</p>
         </div>
     </header>
 
     <!-- Section La Compagnie -->
-    <section class="py-20 bg-gradient-to-br from-gray-800 via-gray-850 to-gray-900">
-        <div class="container mx-auto px-6">
-            <div class="max-w-6xl mx-auto">
-                <!-- Histoire du nom -->
-                <div class="mb-20">
-                    <h2 class="text-4xl font-semibold text-center mb-12 golden-accent">L'origine du nom</h2>
+    <section class="bg-gray-900 py-12 md:py-20">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="mx-auto max-w-6xl">
 
-                    <!-- Premier bloc -->
-                    <div class="grid md:grid-cols-2 gap-12 mb-16 bg-gray-900 bg-opacity-40 p-8 rounded-xl">
-                        <div class="scroll-reveal">
-                            <img src="../images/histoire/hepha3.jpg"
-                                 alt="Héphaïstos"
-                                 class="rounded-lg shadow-2xl w-full h-[500px]  object-cover">
-                        </div>
-
-                        <div class="scroll-reveal flex flex-col justify-center">
-                            <h3 class="text-2xl font-semibold mb-4 golden-accent">Le Dieu du Feu</h3>
-                            <p class="text-gray-300 leading-relaxed mb-4">
-                                La compagnie <strong>Phaestos</strong> tire son nom du dieu grec <strong>Héphaïstos</strong>, divinité du feu et de la forge.
-                            </p>
-                            <p class="text-gray-300 leading-relaxed mb-4">
-                                Lorsque sa mère, Héra, lui donne le jour, elle trouve le nourrisson si laid qu'elle le jette aussitôt du haut de l'Olympe. Sa chute provoque une blessure qui le fera boiter toute sa vie. <em>« Héphaïstos est aussi laid que la déesse Aphrodite est belle »</em>.
-                            </p>
-                            <p class="text-gray-300 leading-relaxed">
-                                Héphaïstos est un dieu déchu, représenté à part, seul, comme un forgeron sale et boiteux. Pourtant, c'est dans cette différence que réside sa force.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Deuxième bloc -->
-                    <div class="grid md:grid-cols-2 gap-12 mb-16 bg-yellow-900 bg-opacity-70 p-8 rounded-xl">
-                        <div class="scroll-reveal flex flex-col justify-center order-2 md:order-1">
-                            <h3 class="text-2xl font-semibold mb-4 golden-accent">Le Dieu Civilisateur</h3>
-                            <p class="text-gray-300 leading-relaxed mb-4">
-                                Héphaïstos n'en est pas moins le <strong>dieu civilisateur</strong>, celui qui enseigne aux hommes les arts du feu et du métal. Le dieu architecte qui dessine les plans et construit les demeures des dieux sur le Mont Olympe.
-                            </p>
-                            <p class="text-gray-300 leading-relaxed mb-4">
-                                De ses mains habiles naissent les outils, les armes, les sandales ailées d'Hermès, le bouclier d'Achille. Il met son talent au service de tous, dieux comme mortels.
-                            </p>
-                            <p class="text-gray-300 leading-relaxed">
-                                C'est aussi un dieu capable de <strong>donner vie</strong> à des êtres qu'il imagine, modèle et façonne.
-                            </p>
-                        </div>
-
-                        <div class="scroll-reveal order-1 md:order-2">
-                            <img src="../images/histoire/roof.jpg"
-                                 alt="Architecture"
-                                 class="rounded-lg shadow-2xl w-full h-96 object-cover">
-                        </div>
-                    </div>
-
-                    <!-- Troisième bloc -->
-                    <div class="grid md:grid-cols-2 gap-12 mb-16 bg-gradient-to-l from-gray-900 via-slate-800 to-gray-800 bg-opacity-30 p-8 rounded-xl">
-                        <div class="scroll-reveal">
-                            <img src="../images/histoire/lion.jpg"
-                                 alt="Le retour victorieux"
-                                 class="rounded-lg shadow-2xl w-full h-96 object-cover">
-                        </div>
-
-                        <div class="scroll-reveal flex flex-col justify-center">
-                            <h3 class="text-2xl font-semibold mb-4 golden-accent">La Flamme qui Brille</h3>
-                            <p class="text-gray-300 leading-relaxed mb-4">
-                                Dès Homère, le nom d'Héphaïstos est utilisé par métonymie pour désigner le feu lui-même. Son nom est rattaché au feu des artisans, mais aussi au feu du foyer — souvent décrit comme faible et démuni, dont la survie dépend de celui qui l'entretient.
-                            </p>
-                            <p class="text-gray-300 leading-relaxed">
-                                Étymologiquement, les anciens expliquaient le nom d'Héphaïstos comme <em>« ce(lui) qui brûle, qui est allumé »</em> ou par <em>« briller »</em>.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Quatrième bloc -->
-                    <div class="grid md:grid-cols-2 gap-12 mb-16 bg-amber-950 bg-opacity-70 p-8 rounded-xl">
-                        <div class="scroll-reveal flex flex-col justify-center order-2 md:order-1">
-                            <h3 class="text-2xl font-semibold mb-4 golden-accent">Le Retour Victorieux</h3>
-                            <p class="text-gray-300 leading-relaxed mb-4">
-                                Exclu, grandissant quasiment seul, Héphaïstos n'a eu que sa confiance en lui et ses capacités de création. Il revient en préparant un piège — un trône d'or pour Héra — sans blesser personne.
-                            </p>
-                            <p class="text-gray-300 leading-relaxed mb-4">
-                                Par son ingéniosité, il parvient à regagner le Mont Olympe victorieux, accepté par ses pairs, et même marié à la déesse de la beauté.
-                            </p>
-                            <p class="text-gray-300 leading-relaxed italic">
-                                J'ai choisi le diminutif de son nom pour représenter la compagnie. Car même si Héphaïstos est peu connu, il reste présent dans notre culture. L'idée est de rappeler les sonorités et la symbolique de son nom, tout en nous en détachant pour créer notre propre histoire. Nos propres mythes.
-                            </p>
-                        </div>
-
-                        <div class="scroll-reveal order-1 md:order-2">
-                            <img src="../images/histoire/hepha2.jpg"
-                                 alt="Héphaïstos au travail"
-                                 class="rounded-lg shadow-2xl w-full h-96 object-cover">
-                        </div>
-                    </div>
+                <div class="mb-8 flex items-center gap-4 md:mb-12">
+                    <h2 class="section-label">L'origine du nom</h2>
+                    <span class="section-rule"></span>
                 </div>
 
-                <div class="scroll-reveal bg-gradient-to-t from-gray-900 via-gray-800 to-transparent p-12 rounded-2xl text-center">
-                    <h2 class="text-4xl font-semibold mb-4 golden-accent">Les Membres</h2>
-                    <p class="text-gray-300 max-w-3xl mx-auto mb-8">
+                <!-- Premier bloc -->
+                <article class="panel scroll-reveal mb-8 md:mb-12">
+                    <div class="grid items-center gap-6 md:grid-cols-2 md:gap-12">
+                        <img src="../images/histoire/hepha3.webp" width="400" height="476" loading="lazy"
+                             alt="Héphaïstos"
+                             class="mx-auto w-full max-w-sm rounded-lg object-cover shadow-2xl md:max-w-none md:h-[28rem]">
+                        <div>
+                            <h3 class="mb-4 text-3xl font-semibold golden-accent md:text-4xl">Le Dieu du Feu</h3>
+                            <div class="space-y-4 text-base leading-relaxed text-gray-300 sm:text-lg">
+                                <p>
+                                    La compagnie <strong>Phaestos</strong> tire son nom du dieu grec <strong>Héphaïstos</strong>, divinité du feu et de la forge.
+                                </p>
+                                <p>
+                                    Lorsque sa mère, Héra, lui donne le jour, elle trouve le nourrisson si laid qu'elle le jette aussitôt du haut de l'Olympe. Sa chute provoque une blessure qui le fera boiter toute sa vie. <em>« Héphaïstos est aussi laid que la déesse Aphrodite est belle »</em>.
+                                </p>
+                                <p>
+                                    Héphaïstos est un dieu déchu, représenté à part, seul, comme un forgeron sale et boiteux. Pourtant, c'est dans cette différence que réside sa force.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Deuxième bloc -->
+                <article class="panel scroll-reveal mb-8 md:mb-12">
+                    <div class="grid items-center gap-6 md:grid-cols-2 md:gap-12">
+                        <img src="../images/histoire/roof.webp" width="1400" height="1867" loading="lazy"
+                             alt="Architecture"
+                             class="aspect-[4/3] w-full rounded-lg object-cover shadow-2xl md:order-2 md:aspect-auto md:h-[28rem]">
+                        <div class="md:order-1">
+                            <h3 class="mb-4 text-3xl font-semibold golden-accent md:text-4xl">Le Dieu Civilisateur</h3>
+                            <div class="space-y-4 text-base leading-relaxed text-gray-300 sm:text-lg">
+                                <p>
+                                    Héphaïstos n'en est pas moins le <strong>dieu civilisateur</strong>, celui qui enseigne aux hommes les arts du feu et du métal. Le dieu architecte qui dessine les plans et construit les demeures des dieux sur le Mont Olympe.
+                                </p>
+                                <p>
+                                    De ses mains habiles naissent les outils, les armes, les sandales ailées d'Hermès, le bouclier d'Achille. Il met son talent au service de tous, dieux comme mortels.
+                                </p>
+                                <p>
+                                    C'est aussi un dieu capable de <strong>donner vie</strong> à des êtres qu'il imagine, modèle et façonne.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Troisième bloc -->
+                <article class="panel scroll-reveal mb-8 md:mb-12">
+                    <div class="grid items-center gap-6 md:grid-cols-2 md:gap-12">
+                        <img src="../images/histoire/lion.webp" width="1400" height="788" loading="lazy"
+                             alt="Le retour victorieux"
+                             class="aspect-[4/3] w-full rounded-lg object-cover shadow-2xl md:aspect-auto md:h-[28rem]">
+                        <div>
+                            <h3 class="mb-4 text-3xl font-semibold golden-accent md:text-4xl">La Flamme qui Brille</h3>
+                            <div class="space-y-4 text-base leading-relaxed text-gray-300 sm:text-lg">
+                                <p>
+                                    Dès Homère, le nom d'Héphaïstos est utilisé par métonymie pour désigner le feu lui-même. Son nom est rattaché au feu des artisans, mais aussi au feu du foyer — souvent décrit comme faible et démuni, dont la survie dépend de celui qui l'entretient.
+                                </p>
+                                <p>
+                                    Étymologiquement, les anciens expliquaient le nom d'Héphaïstos comme <em>« ce(lui) qui brûle, qui est allumé »</em> ou par <em>« briller »</em>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Quatrième bloc -->
+                <article class="panel scroll-reveal mb-8 md:mb-12">
+                    <div class="grid items-center gap-6 md:grid-cols-2 md:gap-12">
+                        <img src="../images/histoire/hepha2.webp" width="736" height="736" loading="lazy"
+                             alt="Héphaïstos au travail"
+                             class="aspect-[4/3] w-full rounded-lg object-cover shadow-2xl md:order-2 md:aspect-auto md:h-[28rem]">
+                        <div class="md:order-1">
+                            <h3 class="mb-4 text-3xl font-semibold golden-accent md:text-4xl">Le Retour Victorieux</h3>
+                            <div class="space-y-4 text-base leading-relaxed text-gray-300 sm:text-lg">
+                                <p>
+                                    Exclu, grandissant quasiment seul, Héphaïstos n'a eu que sa confiance en lui et ses capacités de création. Il revient en préparant un piège — un trône d'or pour Héra — sans blesser personne.
+                                </p>
+                                <p>
+                                    Par son ingéniosité, il parvient à regagner le Mont Olympe victorieux, accepté par ses pairs, et même marié à la déesse de la beauté.
+                                </p>
+                                <p class="italic">
+                                    J'ai choisi le diminutif de son nom pour représenter la compagnie. Car même si Héphaïstos est peu connu, il reste présent dans notre culture. L'idée est de rappeler les sonorités et la symbolique de son nom, tout en nous en détachant pour créer notre propre histoire. Nos propres mythes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Les membres -->
+                <div class="panel scroll-reveal text-center">
+                    <h2 class="mb-4 text-3xl font-semibold golden-accent md:text-4xl">Les Membres</h2>
+                    <p class="mx-auto mb-8 max-w-3xl text-base text-gray-300 sm:text-lg">
                         Les artistes et membres honorifiques de la compagnie disposent désormais d'un espace dédié.
                     </p>
-                    <a href="artistes.html" class="inline-block bg-golden hover:bg-yellow-600 text-gray-900 px-8 py-3 rounded-full font-semibold text-lg transition">
+                    <a href="artistes.html" class="inline-block rounded-full bg-golden px-8 py-3 text-lg font-semibold text-gray-900 transition hover:bg-yellow-500">
                         Découvrir les membres
                     </a>
                 </div>
@@ -182,19 +148,11 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 border-t border-gray-800 py-6">
-        <div class="container mx-auto px-6 text-center">
-            <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-gray-400">
-                <a href="mentions-legales.html" class="hover:text-golden transition">Mentions légales</a>
-                <a href="politique-confidentialite.html" class="hover:text-golden transition">Politique de confidentialité</a>
-            </div>
-            <div class="pt-4 text-center text-gray-400">
-                <p>&copy; 2026 Compagnie Phaestos. Tous droits réservés.</p>
-            </div>
-        </div>
-    </footer>
+    
+</main>
 
-    <script src="../scripts.js"></script>
+    <site-footer></site-footer>
+
+    <script src="../scripts.js" defer></script>
 </body>
 </html>

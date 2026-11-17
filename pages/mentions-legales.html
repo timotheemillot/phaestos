@@ -3,82 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mentions Légales - Phaestos</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Mentions légales – Phaestos</title>
+    <meta name="description" content="Mentions légales du site de la compagnie de théâtre Phaestos.">
+    <meta name="theme-color" content="#111827">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Phaestos">
+    <meta property="og:title" content="Mentions légales – Phaestos">
+    <meta property="og:description" content="Mentions légales du site de la compagnie de théâtre Phaestos.">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="../tailwind.css">
     <link rel="stylesheet" href="../styles.css">
+    <script src="../components.js"></script>
+    <noscript><style>.scroll-reveal{opacity:1;transform:none}</style></noscript>
 </head>
 <body class="bg-gray-900 text-gray-100">
 
-    <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-sm border-b border-gray-800">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-center relative">
-                <a href="../index.html" class="absolute left-6 text-3xl font-bold golden-accent">PHAESTOS</a>
+    <a href="#contenu" class="skip-link">Aller au contenu</a>
+    <site-header></site-header>
 
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="../index.html" class="nav-link text-gray-300 hover:text-white">Accueil</a>
-                    <a href="compagnie.html" class="nav-link text-gray-300 hover:text-white">La Compagnie</a>
-                    <a href="spectacles.html" class="nav-link text-gray-300 hover:text-white">Spectacles</a>
-                    <a href="ateliers.html" class="nav-link text-gray-300 hover:text-white">Ateliers</a>
-                    <div class="nav-dropdown">
-                        <span class="nav-link text-gray-300 hover:text-white inline-flex items-center gap-2 cursor-default">
-                            Membres
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </span>
-                        <div class="nav-dropdown-menu">
-                            <a href="artistes.html" class="dropdown-link">Artistes</a>
-                            <a href="membres-honorifiques.html" class="dropdown-link">Membres honorifiques</a>
-                            <a href="membres-donateurs.html" class="dropdown-link">Membres donateurs</a>
-                        </div>
-                    </div>
-                    <a href="soutenir.html" class="nav-link text-gray-300 hover:text-white">Nous Soutenir</a>
-                    <a href="contact.html" class="nav-link text-gray-300 hover:text-white">Contact</a>
-                </div>
-                <button id="mobile-menu-toggle" class="absolute right-6 md:hidden text-white">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-
-            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-3">
-                <a href="../index.html" class="block text-gray-300 hover:text-white">Accueil</a>
-                <a href="compagnie.html" class="block text-gray-300 hover:text-white">La Compagnie</a>
-                <a href="spectacles.html" class="block text-gray-300 hover:text-white">Spectacles</a>
-                <button type="button" data-submenu-toggle="mobile-members-submenu" aria-expanded="false" class="flex w-full items-center justify-between text-left text-gray-300 hover:text-white">
-                    <span>Membres</span>
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                </button>
-                <div id="mobile-members-submenu" class="mobile-submenu hidden">
-                    <a href="artistes.html" class="mobile-submenu-link">Artistes</a>
-                    <a href="membres-honorifiques.html" class="mobile-submenu-link">Membres honorifiques</a>
-                    <a href="membres-donateurs.html" class="mobile-submenu-link">Membres donateurs</a>
-                </div>
-                <a href="soutenir.html" class="block text-gray-300 hover:text-white">Nous Soutenir</a>
-                <a href="contact.html" class="block text-gray-300 hover:text-white">Contact</a>
-            </div>
-        </div>
-    </nav>
+    <main id="contenu">
 
     <!-- Page Header -->
     <header class="page-header">
         <div class="container mx-auto px-6 text-center">
-            <h1 class="text-5xl md:text-6xl font-bold golden-accent mb-4">Mentions Légales</h1>
-            <p class="text-xl text-gray-300">Informations légales et d'hébergement</p>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold golden-accent mb-4">Mentions Légales</h1>
+            <p class="text-lg md:text-xl text-gray-300">Informations légales et d'hébergement</p>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="container mx-auto px-6 py-20">
-        <div class="max-w-3xl mx-auto space-y-12">
+    <div class="container mx-auto px-4 py-12 sm:px-6 md:py-20">
+        <div class="max-w-4xl mx-auto space-y-6 md:space-y-8">
 
             <!-- Éditeur du site -->
-            <section class="bg-gray-800 p-8 rounded-lg border border-gray-700">
-                <h2 class="text-3xl font-bold golden-accent mb-6">Éditeur du site</h2>
+            <section class="panel">
+                <h2 class="text-2xl md:text-3xl font-bold golden-accent mb-4 md:mb-6">Éditeur du site</h2>
                 <div class="space-y-4 text-gray-300">
                     <p>
                         <span class="font-semibold text-white">Nom de l'association :</span><br>
@@ -105,46 +68,37 @@
 
 
             <!-- Propriété intellectuelle -->
-            <section class="bg-gray-800 p-8 rounded-lg border border-gray-700">
-                <h2 class="text-3xl font-bold golden-accent mb-6">Propriété Intellectuelle</h2>
+            <section class="panel">
+                <h2 class="text-2xl md:text-3xl font-bold golden-accent mb-4 md:mb-6">Propriété Intellectuelle</h2>
                 <p class="text-gray-300 leading-relaxed">
                     L'ensemble du contenu de ce site (textes, images, vidéos, designs) est la propriété exclusive de la Compagnie Phaestos ou de ses contributeurs. Toute reproduction, distribution, transmission, adaptation ou modification du contenu sans autorisation préalable est interdite et peut entraîner des poursuites judiciaires.
                 </p>
             </section>
 
             <!-- Limitation de responsabilité -->
-            <section class="bg-gray-800 p-8 rounded-lg border border-gray-700">
-                <h2 class="text-3xl font-bold golden-accent mb-6">Limitation de Responsabilité</h2>
+            <section class="panel">
+                <h2 class="text-2xl md:text-3xl font-bold golden-accent mb-4 md:mb-6">Limitation de Responsabilité</h2>
                 <p class="text-gray-300 leading-relaxed">
                     La Compagnie Phaestos s'efforce de maintenir ce site à jour et sans erreurs. Cependant, nous ne garantissons pas l'exactitude, l'exhaustivité ou la pertinence des informations publiées. L'utilisation du site se fait à vos propres risques. La Compagnie Phaestos décline toute responsabilité en cas de dommages directs ou indirects résultant de l'accès ou de l'utilisation du site.
                 </p>
             </section>
 
             <!-- Liens externes -->
-            <section class="bg-gray-800 p-8 rounded-lg border border-gray-700">
-                <h2 class="text-3xl font-bold golden-accent mb-6">Liens Externes</h2>
+            <section class="panel">
+                <h2 class="text-2xl md:text-3xl font-bold golden-accent mb-4 md:mb-6">Liens Externes</h2>
                 <p class="text-gray-300 leading-relaxed">
                     Ce site peut contenir des liens vers des sites externes. La Compagnie Phaestos n'est pas responsable du contenu de ces sites tiers. Les liens sont fournis à titre informatif uniquement et ne constituent pas une approbation ou une recommandation explicite.
                 </p>
             </section>
 
         </div>
+    </div>
+
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 border-t border-gray-700 mt-20 py-6">
-        <div class="container mx-auto px-6 text-center">
-            <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-gray-400">
-                <a href="mentions-legales.html" class="hover:text-golden transition">Mentions légales</a>
-                <a href="politique-confidentialite.html" class="hover:text-golden transition">Politique de confidentialité</a>
-            </div>
-            <div class="pt-4 text-center text-gray-400">
-                <p>&copy; 2026 Compagnie Phaestos. Tous droits réservés.</p>
-            </div>
-        </div>
-    </footer>
+    <site-footer></site-footer>
 
-    <script src="../scripts.js"></script>
+    <script src="../scripts.js" defer></script>
 </body>
 </html>
 

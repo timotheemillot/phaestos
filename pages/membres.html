@@ -3,168 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Membres - Phaestos</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Les membres – Phaestos</title>
+    <meta name="description" content="Les artistes, membres honorifiques et membres donateurs qui font vivre la compagnie de théâtre Phaestos.">
+    <meta name="theme-color" content="#111827">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Phaestos">
+    <meta property="og:title" content="Les membres – Phaestos">
+    <meta property="og:description" content="Les artistes, membres honorifiques et membres donateurs qui font vivre la compagnie de théâtre Phaestos.">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="../tailwind.css">
     <link rel="stylesheet" href="../styles.css">
-    <style>
-        .members-hero-grid {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .members-route-card {
-            position: relative;
-            overflow: hidden;
-            transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
-            min-height: 30rem;
-        }
-
-        .members-route-card::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(135deg, rgba(212, 175, 55, 0.12), rgba(255, 255, 255, 0));
-            opacity: 0;
-            transition: opacity 0.35s ease;
-        }
-
-        .members-route-card:hover {
-            transform: translateY(-8px);
-            border-color: rgba(212, 175, 55, 0.5);
-            box-shadow: 0 26px 50px rgba(0, 0, 0, 0.3);
-        }
-
-        .members-route-card:hover::before {
-            opacity: 1;
-        }
-    </style>
+    <script src="../components.js"></script>
+    <noscript><style>.scroll-reveal{opacity:1;transform:none}</style></noscript>
 </head>
 <body class="bg-gray-900 text-gray-100">
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-sm border-b border-gray-800">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-center relative">
-                <a href="../index.html" class="absolute left-6 text-3xl font-bold golden-accent">PHAESTOS</a>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="../index.html" class="nav-link text-gray-300 hover:text-white">Accueil</a>
-                    <a href="compagnie.html" class="nav-link text-gray-300 hover:text-white">La Compagnie</a>
-                    <a href="spectacles.html" class="nav-link text-gray-300 hover:text-white">Spectacles</a>
-                    <a href="ateliers.html" class="nav-link text-gray-300 hover:text-white">Ateliers</a>
-                    <div class="nav-dropdown">
-                        <a href="membres.html" class="nav-link nav-link-active text-white inline-flex items-center gap-2">
-                            Membres
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </a>
-                        <div class="nav-dropdown-menu">
-                            <a href="artistes.html" class="dropdown-link">Artistes</a>
-                            <a href="membres-honorifiques.html" class="dropdown-link">Membres honorifiques</a>
-                            <a href="membres-donateurs.html" class="dropdown-link">Membres donateurs</a>
-                        </div>
-                    </div>
-                    <a href="soutenir.html" class="nav-link text-gray-300 hover:text-white">Nous Soutenir</a>
-                    <a href="contact.html" class="nav-link text-gray-300 hover:text-white">Contact</a>
-                </div>
-                <button id="mobile-menu-toggle" class="absolute right-6 md:hidden text-white">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-3">
-                <a href="../index.html" class="block text-gray-300 hover:text-white">Accueil</a>
-                <a href="compagnie.html" class="block text-gray-300 hover:text-white">La Compagnie</a>
-                <a href="spectacles.html" class="block text-gray-300 hover:text-white">Spectacles</a>
-                <a href="ateliers.html" class="block text-gray-300 hover:text-white">Ateliers</a>
-                <button type="button" data-submenu-toggle="mobile-members-submenu" aria-expanded="true" class="flex w-full items-center justify-between text-left text-white">
-                    <span>Membres</span>
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                </button>
-                <div id="mobile-members-submenu" class="mobile-submenu">
-                    <a href="artistes.html" class="mobile-submenu-link">Artistes</a>
-                    <a href="membres-honorifiques.html" class="mobile-submenu-link">Membres honorifiques</a>
-                    <a href="membres-donateurs.html" class="mobile-submenu-link">Membres donateurs</a>
-                </div>
-                <a href="soutenir.html" class="block text-gray-300 hover:text-white">Nous Soutenir</a>
-                <a href="contact.html" class="block text-gray-300 hover:text-white">Contact</a>
-            </div>
-        </div>
-    </nav>
+    <a href="#contenu" class="skip-link">Aller au contenu</a>
+    <site-header></site-header>
+
+    <main id="contenu">
 
     <header class="page-header">
         <div class="container mx-auto px-6 text-center">
-            <h1 class="text-5xl md:text-6xl font-bold golden-accent mb-4">Les Membres</h1>
-            <p class="text-xl text-gray-300">Trois espaces dedies pour decouvrir celles et ceux qui font vivre Phaestos</p>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold golden-accent mb-4">Les Membres</h1>
+            <p class="text-lg md:text-xl text-gray-300">Trois espaces dédiés pour découvrir celles et ceux qui font vivre Phaestos</p>
         </div>
     </header>
 
-    <section class="py-20 bg-gray-900">
-        <div class="max-w-[1500px] mx-auto px-6">
-            <div class="members-hero-grid rounded-[2rem] border border-[rgba(212,175,55,0.22)] bg-gradient-to-br from-[rgba(119,84,20,0.72)] via-[rgba(86,61,18,0.74)] to-[rgba(62,45,17,0.76)] px-8 py-10 md:px-12 md:py-14 mb-10 scroll-reveal">
-                <div class="relative z-10 grid lg:grid-cols-3 gap-6">
-                    <a href="artistes.html" class="members-route-card block rounded-[1.5rem] border border-gray-700 bg-black/20 p-7">
-                        <div class="relative z-10 h-full flex flex-col justify-between gap-10">
+    <section class="bg-gray-900 py-12 md:py-20">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="mx-auto max-w-6xl">
+                <div class="panel scroll-reveal">
+                    <div class="mb-4 flex items-center gap-4">
+                        <h2 class="section-label">Nos espaces</h2>
+                        <span class="section-rule"></span>
+                    </div>
+                    <p class="mb-8 max-w-3xl text-base text-gray-300 sm:text-lg md:mb-10">Trois espaces dédiés pour découvrir celles et ceux qui font vivre Phaestos.</p>
+
+                    <div class="grid gap-4 sm:gap-6 lg:grid-cols-3">
+                        <a href="artistes.html" class="members-route-card group flex flex-col justify-between gap-8 rounded-lg border border-gray-700 bg-gray-900/70 p-6 transition hover:border-golden/60 hover:shadow-xl">
                             <div>
-                                <span class="text-xs uppercase tracking-[0.35em] text-gray-500">01</span>
-                                <h3 class="text-3xl md:text-4xl golden-accent mt-3 mb-3">Artistes</h3>
-                                <p class="text-gray-300 leading-relaxed max-w-2xl">
-                                    Les interpretes, metteurs en scene et createurs qui portent les formes artistiques de Phaestos.
+                                <span class="text-xs uppercase tracking-[0.35em] text-gray-400">01</span>
+                                <h3 class="mb-3 mt-3 text-3xl golden-accent md:text-4xl">Artistes</h3>
+                                <p class="leading-relaxed text-gray-300">
+                                    Les interprètes, metteurs en scène et créateurs qui portent les formes artistiques de Phaestos.
                                 </p>
                             </div>
                             <div class="flex items-end justify-between gap-4">
-                                <span class="text-sm uppercase tracking-[0.25em] text-gray-500">Explorer</span>
-                                <span class="text-golden text-3xl leading-none">+</span>
+                                <span class="text-sm uppercase tracking-[0.25em] text-gray-400">Explorer</span>
+                                <span class="text-3xl leading-none text-golden transition group-hover:translate-x-1" aria-hidden="true">→</span>
                             </div>
-                        </div>
-                    </a>
-                    <a href="membres-honorifiques.html" class="members-route-card block rounded-[1.5rem] border border-gray-700 bg-black/20 p-7">
-                        <div class="relative z-10 h-full flex flex-col justify-between gap-10">
+                        </a>
+                        <a href="membres-honorifiques.html" class="members-route-card group flex flex-col justify-between gap-8 rounded-lg border border-gray-700 bg-gray-900/70 p-6 transition hover:border-golden/60 hover:shadow-xl">
                             <div>
-                                <span class="text-xs uppercase tracking-[0.35em] text-gray-500">02</span>
-                                <h3 class="text-3xl md:text-4xl golden-accent mt-3 mb-3">Membres honorifiques</h3>
-                                <p class="text-gray-300 leading-relaxed max-w-2xl">
-                                    Celles et ceux qui accompagnent la compagnie durablement par leur confiance, leur aide et leur presence.
+                                <span class="text-xs uppercase tracking-[0.35em] text-gray-400">02</span>
+                                <h3 class="mb-3 mt-3 text-3xl golden-accent md:text-4xl">Membres honorifiques</h3>
+                                <p class="leading-relaxed text-gray-300">
+                                    Celles et ceux qui accompagnent la compagnie durablement par leur confiance, leur aide et leur présence.
                                 </p>
                             </div>
                             <div class="flex items-end justify-between gap-4">
-                                <span class="text-sm uppercase tracking-[0.25em] text-gray-500">Explorer</span>
-                                <span class="text-golden text-3xl leading-none">+</span>
+                                <span class="text-sm uppercase tracking-[0.25em] text-gray-400">Explorer</span>
+                                <span class="text-3xl leading-none text-golden transition group-hover:translate-x-1" aria-hidden="true">→</span>
                             </div>
-                        </div>
-                    </a>
-                    <a href="membres-donateurs.html" class="members-route-card block rounded-[1.5rem] border border-gray-700 bg-black/20 p-7">
-                        <div class="relative z-10 h-full flex flex-col justify-between gap-10">
+                        </a>
+                        <a href="membres-donateurs.html" class="members-route-card group flex flex-col justify-between gap-8 rounded-lg border border-gray-700 bg-gray-900/70 p-6 transition hover:border-golden/60 hover:shadow-xl">
                             <div>
-                                <span class="text-xs uppercase tracking-[0.35em] text-gray-500">03</span>
-                                <h3 class="text-3xl md:text-4xl golden-accent mt-3 mb-3">Membres donateurs</h3>
-                                <p class="text-gray-300 leading-relaxed max-w-2xl">
-                                    Les personnes qui rendent concretement possibles les futurs projets de la compagnie par leur soutien financier.
+                                <span class="text-xs uppercase tracking-[0.35em] text-gray-400">03</span>
+                                <h3 class="mb-3 mt-3 text-3xl golden-accent md:text-4xl">Membres donateurs</h3>
+                                <p class="leading-relaxed text-gray-300">
+                                    Les personnes qui rendent concrètement possibles les futurs projets de la compagnie par leur soutien financier.
                                 </p>
                             </div>
                             <div class="flex items-end justify-between gap-4">
-                                <span class="text-sm uppercase tracking-[0.25em] text-gray-500">Explorer</span>
-                                <span class="text-golden text-3xl leading-none">+</span>
+                                <span class="text-sm uppercase tracking-[0.25em] text-gray-400">Explorer</span>
+                                <span class="text-3xl leading-none text-golden transition group-hover:translate-x-1" aria-hidden="true">→</span>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <footer class="bg-gray-900 border-t border-gray-800 py-6">
-        <div class="container mx-auto px-6 text-center">
-            <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-gray-400">
-                <a href="mentions-legales.html" class="hover:text-golden transition">Mentions legales</a>
-                <a href="politique-confidentialite.html" class="hover:text-golden transition">Politique de confidentialite</a>
-            </div>
-            <div class="pt-4 text-center text-gray-400"><p>&copy; 2026 Compagnie Phaestos. Tous droits reserves.</p></div>
-        </div>
-    </footer>
+    
+</main>
 
-    <script src="../scripts.js"></script>
+    <site-footer></site-footer>
+
+    <script src="../scripts.js" defer></script>
 </body>
 </html>

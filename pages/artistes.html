@@ -3,159 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artistes - Phaestos</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Les artistes – Phaestos</title>
+    <meta name="description" content="Rencontrez les comédiennes, comédiens et metteurs en scène de la compagnie de théâtre Phaestos.">
+    <meta name="theme-color" content="#111827">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Phaestos">
+    <meta property="og:title" content="Les artistes – Phaestos">
+    <meta property="og:description" content="Rencontrez les comédiennes, comédiens et metteurs en scène de la compagnie de théâtre Phaestos.">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="../tailwind.css">
     <link rel="stylesheet" href="../styles.css">
+    <script src="../components.js"></script>
+    <noscript><style>.scroll-reveal{opacity:1;transform:none}</style></noscript>
 </head>
 <body class="bg-gray-900 text-gray-100">
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-sm border-b border-gray-800">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-center relative">
-                <a href="../index.html" class="absolute left-6 text-3xl font-bold golden-accent">PHAESTOS</a>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="../index.html" class="nav-link text-gray-300 hover:text-white">Accueil</a>
-                    <a href="compagnie.html" class="nav-link text-gray-300 hover:text-white">La Compagnie</a>
-                    <a href="spectacles.html" class="nav-link text-gray-300 hover:text-white">Spectacles</a>
-                    <a href="ateliers.html" class="nav-link text-gray-300 hover:text-white">Ateliers</a>
-                    <div class="nav-dropdown">
-                        <span class="nav-link nav-link-active text-white inline-flex items-center gap-2 cursor-default">Membres<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></span>
-                        <div class="nav-dropdown-menu">
-                            <a href="artistes.html" class="dropdown-link dropdown-link-active">Artistes</a>
-                            <a href="membres-honorifiques.html" class="dropdown-link">Membres honorifiques</a>
-                            <a href="membres-donateurs.html" class="dropdown-link">Membres donateurs</a>
-                        </div>
-                    </div>
-                    <a href="soutenir.html" class="nav-link text-gray-300 hover:text-white">Nous Soutenir</a>
-                    <a href="contact.html" class="nav-link text-gray-300 hover:text-white">Contact</a>
-                </div>
-                <button id="mobile-menu-toggle" class="absolute right-6 md:hidden text-white">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-                </button>
-            </div>
-            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-3">
-                <a href="../index.html" class="block text-gray-300 hover:text-white">Accueil</a>
-                <a href="compagnie.html" class="block text-gray-300 hover:text-white">La Compagnie</a>
-                <a href="spectacles.html" class="block text-gray-300 hover:text-white">Spectacles</a>
-                <a href="ateliers.html" class="block text-gray-300 hover:text-white">Ateliers</a>
-                <button type="button" data-submenu-toggle="mobile-members-submenu" aria-expanded="true" class="flex w-full items-center justify-between text-left text-white"><span>Membres</span><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
-                <div id="mobile-members-submenu" class="mobile-submenu">
-                    <a href="artistes.html" class="mobile-submenu-link mobile-submenu-link-active">Artistes</a>
-                    <a href="membres-honorifiques.html" class="mobile-submenu-link">Membres honorifiques</a>
-                    <a href="membres-donateurs.html" class="mobile-submenu-link">Membres donateurs</a>
-                </div>
-                <a href="soutenir.html" class="block text-gray-300 hover:text-white">Nous Soutenir</a>
-                <a href="contact.html" class="block text-gray-300 hover:text-white">Contact</a>
-            </div>
-        </div>
-    </nav>
+    <a href="#contenu" class="skip-link">Aller au contenu</a>
+    <site-header></site-header>
+
+    <main id="contenu">
 
     <header class="page-header">
         <div class="container mx-auto px-6 text-center">
-            <h1 class="text-5xl md:text-6xl font-bold golden-accent mb-4">Les Artistes</h1>
-            <p class="text-xl text-gray-300">Les voix, les corps et les imaginaires qui construisent les creations de la compagnie</p>
+            <h1 class="text-4xl sm:text-4xl sm:text-5xl md:text-6xl font-bold golden-accent mb-4">Les Artistes</h1>
+            <p class="text-lg md:text-xl text-gray-300">Les voix, les corps et les imaginaires qui construisent les créations de la compagnie</p>
         </div>
     </header>
 
-    <section class="py-20 bg-gray-900">
-        <div class="container mx-auto px-6">
-            <div class="max-w-6xl mx-auto">
-                <div class="scroll-reveal bg-gradient-to-t from-gray-900 via-gray-800 to-transparent p-12 rounded-2xl">
-                    <h2 class="text-4xl font-semibold text-center mb-4 golden-accent">Equipe artistique</h2>
-                    <p class="text-center text-gray-300 max-w-3xl mx-auto mb-12">Entre jeu, mise en scene, ecriture et recherche collective, les artistes de Phaestos portent une pratique exigeante et vivante.</p>
-                    <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                        <div class="card-hover bg-gray-900 rounded-lg overflow-hidden relative group">
-                            <img src="../membres/juliette/juliette.jpg" alt="Juliette Ganay" class="w-full object-cover">
-                            <div class="p-6">
-                                <h4 class="text-xl font-semibold mb-2">Juliette Ganay</h4>
-                                <p class="text-gray-400 text-sm mb-2">Comedienne</p>
-                                <p class="text-gray-300 text-sm member-short-desc">Passionnee de theatre, formee au Cours Florent.</p>
-                                <div class="member-full-desc hidden group-hover:block absolute inset-0 bg-gray-900 bg-opacity-95 p-6 overflow-y-auto transition-all duration-300">
-                                    <h4 class="text-xl font-semibold mb-2 golden-accent">Juliette Ganay</h4>
-                                    <p class="text-gray-400 text-sm mb-4">Comedienne</p>
-                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">Passionnee de theatre depuis sa decouverte a l'age de 6 ans, elle decide de se former au Cours Florent. A 21 ans, elle sort de l'ecole avide de challenges, de depassement et de rencontres.</p>
-                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">Le travail collectif et les connexions emotionnelles qui en decoulent sont ce qu'elle prefere. Juliette se passionne aussi pour la gymnastique artistique, qu'elle a pratiquee pendant plus de 10 ans, le dessin et la danse contemporaine.</p>
-                                    <p class="text-gray-400 text-xs mt-4">Instagram : @jujugny</p>
-                                </div>
+    <section class="py-12 md:py-20 bg-gray-900">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="max-w-6xl mx-auto scroll-reveal">
+                <div class="rounded-xl border border-yellow-900/60 bg-gray-800/40 p-4 sm:p-6 md:p-10">
+                    <div class="mb-4 flex items-center gap-4">
+                        <h2 class="text-sm sm:text-base font-body font-semibold uppercase tracking-[0.2em] golden-accent whitespace-nowrap">Équipe artistique</h2>
+                        <span class="h-px flex-1 bg-gradient-to-r from-yellow-700/60 to-transparent"></span>
+                    </div>
+                    <p class="text-base sm:text-lg text-gray-300 max-w-3xl mb-8 md:mb-10 leading-relaxed">Entre jeu, mise en scène, écriture et recherche collective, les artistes de Phaestos portent une pratique exigeante et vivante.</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 items-start">
+                        <article class="member-card">
+                            <div class="member-row">
+                                <div class="member-photo"><img src="../membres/juliette/juliette.webp" alt="Juliette Ganay, portrait" width="900" height="1200" loading="lazy" class="w-full aspect-[3/4] object-cover object-top"></div>
+                            <div class="member-body">
+                                <h3 class="member-name">Juliette Ganay</h3>
+                                <p class="member-role">Comédienne</p>
+                                <p class="member-short">Passionnée de théâtre, formée au Cours Florent.</p>
                             </div>
-                        </div>
-                        <div class="card-hover bg-gray-900 rounded-lg overflow-hidden relative group">
-                            <img src="../membres/anne/anne.jpg" alt="Anne Fumeaux" class="w-full object-cover">
-                            <div class="p-6">
-                                <h4 class="text-xl font-semibold mb-2">Anne Fumeaux</h4>
-                                <p class="text-gray-400 text-sm mb-2">Comedienne et metteuse en scene</p>
-                                <p class="text-gray-300 text-sm member-short-desc">Passionnee de theatre et de cinema, formee aux Cours Florent.</p>
-                                <div class="member-full-desc hidden group-hover:block absolute inset-0 bg-gray-900 bg-opacity-95 p-6 overflow-y-auto transition-all duration-300">
-                                    <h4 class="text-xl font-semibold mb-2 golden-accent">Anne Fumeaux</h4>
-                                    <p class="text-gray-400 text-sm mb-4">Comedienne et metteuse en scene</p>
-                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">Passionnee de theatre et de cinema, Anne Fumeaux se forme aux Cours Florent ou elle decouvre egalement un gout pour la mise en scene.</p>
-                                    <p class="text-gray-300 text-sm leading-relaxed">L'art lui permet de se connecter au monde et de tenter d'y apporter quelque chose.</p>
-                                </div>
                             </div>
-                        </div>
-                        <div class="card-hover bg-gray-900 rounded-lg overflow-hidden relative group">
-                            <img src="../membres/mathis/mathis.JPG" alt="Mathis Meteau" class="w-full object-cover">
-                            <div class="p-6">
-                                <h4 class="text-xl font-semibold mb-2">Mathis Meteau</h4>
-                                <p class="text-gray-400 text-sm mb-2">Comedien, auteur et metteur en scene</p>
-                                <p class="text-gray-300 text-sm member-short-desc">Toujours en mouvement, avec l'envie de creer et donner vie a tout ce que l'imagination invente.</p>
-                                <div class="member-full-desc hidden group-hover:block absolute inset-0 bg-gray-900 bg-opacity-95 p-6 overflow-y-auto transition-all duration-300">
-                                    <h4 class="text-xl font-semibold mb-2 golden-accent">Mathis Meteau</h4>
-                                    <p class="text-gray-400 text-sm mb-4">Comedien, auteur et metteur en scene</p>
-                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">Avant tout comedien et acteur, mais aussi auteur, metteur en scene, createur plasticien, sportif, musicien et photographe.</p>
-                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">Toujours en mouvement, avec pour envie de creer et donner vie a tout ce que l'imagination peut inventer.</p>
-                                    <p class="text-gray-300 text-sm leading-relaxed">Sa volonte artistique est de valoriser le non-conventionnel et d'aller chercher l'inconnu, la ou la peur apparait.</p>
-                                </div>
+                            <details class="member-bio">
+                                    <summary>Lire la bio</summary>
+                                    <div class="member-bio-text"><p>Passionnée de théâtre depuis sa découverte à l'âge de 6 ans, elle décide de se former au Cours Florent. À 21 ans, elle sort de l'école avide de challenges, de dépassement et de rencontres.</p><p>Le travail collectif et les connexions émotionnelles qui en découlent sont ce qu'elle préfère. Juliette se passionne aussi pour la gymnastique artistique, qu'elle a pratiquée pendant plus de 10 ans, le dessin et la danse contemporaine.</p><p class="member-insta"><a href="https://www.instagram.com/jujugny/" target="_blank" rel="noopener noreferrer">Instagram : @jujugny</a></p></div>
+                                </details>
+                        </article>
+                        <article class="member-card">
+                            <div class="member-row">
+                                <div class="member-photo"><img src="../membres/anne/anne.webp" alt="Anne Fumeaux, portrait" width="900" height="1200" loading="lazy" class="w-full aspect-[3/4] object-cover object-top"></div>
+                            <div class="member-body">
+                                <h3 class="member-name">Anne Fumeaux</h3>
+                                <p class="member-role">Comédienne et metteuse en scène</p>
+                                <p class="member-short">Passionnée de théâtre et de cinéma, formée aux Cours Florent.</p>
                             </div>
-                        </div>
-                        <div class="card-hover bg-gray-900 rounded-lg overflow-hidden relative group">
-                            <div class="w-full aspect-[2/3] bg-gray-800 border-b border-gray-700 flex items-center justify-center">
-                                <span class="text-gray-500 text-sm uppercase tracking-[0.25em]">Image à venir</span>
                             </div>
-                            <div class="p-6">
-                                <h4 class="text-xl font-semibold mb-2">Mina Lafaurie</h4>
-                                <p class="text-gray-400 text-sm mb-2">Scénographe et metteuse en scène</p>
-                                <p class="text-gray-300 text-sm member-short-desc">Diplômée en espace public, mobilité urbaine et théâtre, elle oriente sa pratique vers la scénographie.</p>
-                                <div class="member-full-desc hidden group-hover:block absolute inset-0 bg-gray-900 bg-opacity-95 p-6 overflow-y-auto transition-all duration-300">
-                                    <h4 class="text-xl font-semibold mb-2 golden-accent">Mina Lafaurie</h4>
-                                    <p class="text-gray-400 text-sm mb-4">Scénographe et metteuse en scène</p>
-                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">Diplômée d'un DN MADE mention Espace public et Mobilité urbaine ainsi que d'une licence de théâtre, Mina Lafaurie souhaite orienter sa pratique vers la scénographie.</p>
-                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">Raconter des histoires, mettre en valeur les comédiens et réfléchir à la manière de les accompagner sont des aspects qui l'attirent particulièrement.</p>
-                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">Elle s'intéresse aussi aux solutions plus pérennes et durables pour les scénographies, afin de penser autrement le théâtre.</p>
-                                    <p class="text-gray-400 text-xs mt-4">Instagram : @mina.lfr</p>
-                                </div>
+                            <details class="member-bio">
+                                    <summary>Lire la bio</summary>
+                                    <div class="member-bio-text"><p>Passionnée de théâtre et de cinéma, Anne Fumeaux se forme aux Cours Florent où elle découvre également un goût pour la mise en scène.</p><p>L'art lui permet de se connecter au monde et de tenter d'y apporter quelque chose.</p></div>
+                                </details>
+                        </article>
+                        <article class="member-card">
+                            <div class="member-row">
+                                <div class="member-photo"><img src="../membres/mathis/mathis.webp" alt="Mathis Meteau, portrait" width="900" height="1200" loading="lazy" class="w-full aspect-[3/4] object-cover object-top"></div>
+                            <div class="member-body">
+                                <h3 class="member-name">Mathis Meteau</h3>
+                                <p class="member-role">Comédien, auteur et metteur en scène</p>
+                                <p class="member-short">Toujours en mouvement, avec l'envie de créer et de donner vie à tout ce que l'imagination invente.</p>
                             </div>
-                        </div>
-                        <div class="card-hover bg-gray-900 rounded-lg overflow-hidden relative group">
-                            <img src="../membres/eva-louise/eva-louise.jpeg" alt="Eva-Louise Gasquez" class="w-full aspect-[2/3] object-cover">
-                            <div class="p-6">
-                                <h4 class="text-xl font-semibold mb-2">Eva-Louise Gasquez</h4>
-                                <p class="text-gray-400 text-sm mb-2">Comédienne, metteuse en scène et professeure de théâtre</p>
-                                <p class="text-gray-300 text-sm member-short-desc">Formée au Cours Florent et dans les conservatoires d’arrondissement, elle assure le relais sur le plateau lorsque l’équipe en a besoin.</p>
-                                <div class="member-full-desc hidden group-hover:block absolute inset-0 bg-gray-900 bg-opacity-95 p-6 overflow-y-auto transition-all duration-300">
-                                    <h4 class="text-xl font-semibold mb-2 golden-accent">Eva-Louise Gasquez</h4>
-                                    <p class="text-gray-400 text-sm mb-4">Comédienne, metteuse en scène et professeure de théâtre</p>
-                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">Après un master en communication, puis une formation au Cours Florent et dans les conservatoires d’arrondissement, Eva-Louise est comédienne, metteuse en scène et professeure de théâtre dans plusieurs compagnies (Compagnie de l’Équipage, Compagnie Nébuleuse, Atelier théâtre La Relève). Elle assure le relais sur le plateau lorsque l’équipe en a besoin.</p>
-                                    <p class="text-gray-300 text-sm leading-relaxed mb-3">Avec la Compagnie de l’Équipage, elle a mis en scène <em>Un équipage sous les étoiles</em> (prix Actises 2026), programmé sur une trentaine de dates dans divers théâtres et festivals à Paris.</p>
-                                    <p class="text-gray-300 text-sm leading-relaxed">À l’Atelier théâtre La Relève, à Bois-Colombes, elle donne des cours de théâtre, écrit et met en scène des pièces depuis 2023.</p>
-                                </div>
                             </div>
-                        </div>
+                            <details class="member-bio">
+                                    <summary>Lire la bio</summary>
+                                    <div class="member-bio-text"><p>Avant tout comédien et acteur, mais aussi auteur, metteur en scène, créateur plasticien, sportif, musicien et photographe.</p><p>Toujours en mouvement, avec pour envie de créer et donner vie à tout ce que l'imagination peut inventer.</p><p>Sa volonté artistique est de valoriser le non-conventionnel et d'aller chercher l'inconnu, là où la peur apparaît.</p></div>
+                                </details>
+                        </article>
+                        <article class="member-card">
+                            <div class="member-row">
+                                <div class="member-photo"><div class="w-full aspect-[3/4] bg-gray-800 flex items-center justify-center" role="img" aria-label="Photo à venir"><span class="text-gray-500 text-xs sm:text-sm uppercase tracking-[0.25em] text-center px-2">Photo à venir</span></div></div>
+                            <div class="member-body">
+                                <h3 class="member-name">Mina Lafaurie</h3>
+                                <p class="member-role">Scénographe et metteuse en scène</p>
+                                <p class="member-short">Diplômée en espace public, mobilité urbaine et théâtre, elle oriente sa pratique vers la scénographie.</p>
+                            </div>
+                            </div>
+                            <details class="member-bio">
+                                    <summary>Lire la bio</summary>
+                                    <div class="member-bio-text"><p>Diplômée d'un DN MADE mention Espace public et Mobilité urbaine ainsi que d'une licence de théâtre, Mina Lafaurie souhaite orienter sa pratique vers la scénographie.</p><p>Raconter des histoires, mettre en valeur les comédiens et réfléchir à la manière de les accompagner sont des aspects qui l'attirent particulièrement.</p><p>Elle s'intéresse aussi aux solutions plus pérennes et durables pour les scénographies, afin de penser autrement le théâtre.</p><p class="member-insta"><a href="https://www.instagram.com/mina.lfr/" target="_blank" rel="noopener noreferrer">Instagram : @mina.lfr</a></p></div>
+                                </details>
+                        </article>
+                        <article class="member-card">
+                            <div class="member-row">
+                                <div class="member-photo"><img src="../membres/eva-louise/eva-louise.webp" alt="Eva-Louise Gasquez, portrait" width="900" height="1200" loading="lazy" class="w-full aspect-[3/4] object-cover object-top"></div>
+                            <div class="member-body">
+                                <h3 class="member-name">Eva-Louise Gasquez</h3>
+                                <p class="member-role">Comédienne, metteuse en scène et professeure de théâtre</p>
+                                <p class="member-short">Formée au Cours Florent et dans les conservatoires d'arrondissement, elle assure le relais sur le plateau lorsque l'équipe en a besoin.</p>
+                            </div>
+                            </div>
+                            <details class="member-bio">
+                                    <summary>Lire la bio</summary>
+                                    <div class="member-bio-text"><p>Après un master en communication, puis une formation au Cours Florent et dans les conservatoires d'arrondissement, Eva-Louise est comédienne, metteuse en scène et professeure de théâtre dans plusieurs compagnies (Compagnie de l'Équipage, Compagnie Nébuleuse, Atelier théâtre La Relève). Elle assure le relais sur le plateau lorsque l'équipe en a besoin.</p><p>Avec la Compagnie de l'Équipage, elle a mis en scène <em>Un équipage sous les étoiles</em> (prix Actises 2026), programmé sur une trentaine de dates dans divers théâtres et festivals à Paris.</p><p>À l'Atelier théâtre La Relève, à Bois-Colombes, elle donne des cours de théâtre, écrit et met en scène des pièces depuis 2023.</p></div>
+                                </details>
+                        </article>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-gray-900 border-t border-gray-800 py-6">
-        <div class="container mx-auto px-6 text-center">
-            <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-gray-400">
-                <a href="mentions-legales.html" class="hover:text-golden transition">Mentions legales</a>
-                <a href="politique-confidentialite.html" class="hover:text-golden transition">Politique de confidentialite</a>
-            </div>
-            <div class="pt-4 text-center text-gray-400"><p>&copy; 2026 Compagnie Phaestos. Tous droits reserves.</p></div>
-        </div>
-    </footer>
+    </main>
 
-    <script src="../scripts.js"></script>
+    <site-footer></site-footer>
+
+    <script src="../scripts.js" defer></script>
 </body>
 </html>
