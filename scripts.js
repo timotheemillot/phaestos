@@ -108,3 +108,64 @@ if (nav) {
             : 'rgba(17, 24, 39, 0.95)';
     });
 }
+
+
+/* ---------- Visionneuse photos (page Spectacles) ---------- */
+const lightbox = document.getElementById('lightbox');
+const lightboxTriggers = Array.from(document.querySelectorAll('[data-lightbox]'))
+    .sort((a, b) => Number(a.dataset.lightbox) - Number(b.dataset.lightbox));
+
+if (lightbox && lightboxTriggers.length > 0 && typeof lightbox.showModal === 'function') {
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    let current = 0;
+
+    const showPhoto = (index) => {
+        current = (index + lightboxTriggers.length) % lightboxTriggers.length;
+        const source = lightboxTriggers[current].querySelector('img');
+        lightboxImg.src = source.currentSrc || source.src;
+        lightboxImg.alt = source.alt;
+        lightboxCaption.textContent = `${current + 1} / ${lightboxTriggers.length}`;
+    };
+
+    lightboxTriggers.forEach((trigger, index) => {
+        trigger.addEventListener('click', () => {
+            showPhoto(index);
+            lightbox.showModal();
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    lightbox.addEventListener('close', () => {
+        document.body.style.overflow = '';
+        lightboxTriggers[current].focus();
+    });
+
+    lightbox.querySelector('[data-lightbox-close]').addEventListener('click', () => lightbox.close());
+    lightbox.querySelector('[data-lightbox-prev]').addEventListener('click', () => showPhoto(current - 1));
+    lightbox.querySelector('[data-lightbox-next]').addEventListener('click', () => showPhoto(current + 1));
+
+    // Clic en dehors de la photo : fermeture
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox || e.target.classList.contains('lightbox-inner')) {
+            lightbox.close();
+        }
+    });
+
+    lightbox.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') showPhoto(current - 1);
+        if (e.key === 'ArrowRight') showPhoto(current + 1);
+    });
+
+    // Balayage sur mobile
+    let touchStartX = null;
+    lightbox.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+    }, { passive: true });
+    lightbox.addEventListener('touchend', (e) => {
+        if (touchStartX === null) return;
+        const delta = e.changedTouches[0].clientX - touchStartX;
+        if (Math.abs(delta) > 50) showPhoto(current + (delta < 0 ? 1 : -1));
+        touchStartX = null;
+    });
+}

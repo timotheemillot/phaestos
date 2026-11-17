@@ -67,7 +67,7 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="page-header">
+    <header class="page-header page-header--spectacle">
         <div class="container mx-auto px-6 text-center">
             <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold golden-accent mb-4">Nos Spectacles</h1>
             <p class="text-lg md:text-xl text-gray-300">Découvrez nos créations théâtrales</p>
@@ -77,176 +77,139 @@
     <!-- Section Spectacles -->
     <section class="py-12 md:py-20 bg-gray-900">
         <div class="container mx-auto px-4 sm:px-6">
-            <!-- Projet en cours -->
-            <div class="max-w-5xl mx-auto mb-10 md:mb-16 scroll-reveal">
-                <div class="bg-yellow-900 rounded-lg p-1.5 sm:p-2">
-                    <div class="bg-gray-900 rounded-lg p-4 sm:p-6 md:p-8">
-                        <h2 class="text-3xl sm:text-4xl font-bold leading-tight mb-4">Attentat à la pudeur. Au purgatoire.</h2>
-                        <h3 class="text-xl sm:text-2xl italic text-gray-300 mb-6">ou « Je déteste l'amour. Je déteste la haine »</h3>
 
-                        <!-- Images du spectacle -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-2">
-                            <img src="../images/spectacle/pay-aap3.webp" alt="Spectacle Attentat à la pudeur" class="w-full h-56 sm:h-48 object-cover rounded-lg hover:opacity-90 transition">
-                            <img src="../images/spectacle/pay-aap7.webp" alt="Spectacle Attentat à la pudeur" class="w-full h-56 sm:h-48 hidden md:inline object-cover rounded-lg hover:opacity-90 transition">
-                            <img src="../images/spectacle/pay-aap4.webp" alt="Spectacle Attentat à la pudeur" class="w-full h-56 sm:h-48 hidden md:inline object-cover rounded-lg hover:opacity-90 transition">
-                            <img src="../images/spectacle/pay-aap6.webp" alt="Spectacle Attentat à la pudeur" class="w-full h-56 sm:h-48 hidden md:inline object-cover rounded-lg hover:opacity-90 transition">
-                            <img src="../images/spectacle/por-aap1.webp" alt="Spectacle Attentat à la pudeur" class="w-full h-96 sm:h-48 object-cover rounded-lg hover:opacity-90 transition">
-                            <img src="../images/spectacle/por-aap2.webp" alt="Spectacle Attentat à la pudeur" class="w-full h-96 sm:h-48 object-cover rounded-lg hover:opacity-90 transition">
-                            <img src="../images/spectacle/pay-aap5.webp" alt="Spectacle Attentat à la pudeur" class="w-full h-56 sm:h-48 object-cover rounded-lg hover:opacity-90 transition">
-                            <img src="../images/spectacle/pay-aap8.webp" alt="Spectacle Attentat à la pudeur" class="w-full h-56 sm:h-48 hidden md:inline object-cover rounded-lg hover:opacity-90 transition">
-                        </div>
-                        <div class="w-full flex items-center justify-end mb-6">
-                            <div class="text-gray-400 text-sm md:text-base">Photos : Matthieu le Jeune (@juste_matthieu_)</div>
-                        </div>
+            <!--
+                À L'AFFICHE : quand un nouveau spectacle se jouera, dupliquer le bloc <article> ci-dessous
+                dans une section "À l'affiche" placée avant "Créations passées", avec un encart de dates à venir.
+            -->
 
-                        <p class="text-sm sm:text-base text-gray-300 mb-6 leading-relaxed">
-                            Une pièce de théâtre humaniste, dansante, emplie d'humour et imprégnée de performance et de créations artistiques diverses.
-                            Une œuvre pluridisciplinaire où la danse, le chant, le clown, le masque, l'expression corporelle, la peinture et la sculpture ont vocation à se rencontrer pour donner pleinement vie aux propos.
-                        </p>
-
-                        <p class="text-sm sm:text-base text-gray-300 mb-6 leading-relaxed">
-                            La pièce est une fenêtre, la plus large possible, sur le monde et les gens qui nous entourent. Elle cherche à mettre en lumière chacun de nos sentiments, positif comme négatif, provoqués par nos interactions quotidiennes. C'est une introspection entre nous et nos contemporains ; une réflexion sur notre relation aux autres, à notre vision du monde et à nos ressentis, nos avis et nos engagements les plus profonds.
-                        </p>
-
-
-                        <div class="flex flex-wrap gap-x-4 gap-y-2 text-sm sm:text-base mb-6">
-                            <span class="text-gray-400"><strong>Auteur & Mise en scène :</strong> Mathis Meteau</span>
-                            <span class="text-gray-400"><strong>Durée :</strong> 1h15 max</span>
-                            <span class="text-gray-400"><strong>Public :</strong> Tout public, dès 12 ans</span>
-                            <span class="text-gray-400"><strong>Musique originale :</strong> Rubber Circée</span>
-                        </div>
-
-                        <div class="mb-6 text-sm sm:text-base">
-                            <p class="text-gray-400"><strong>Distribution :</strong></p>
-                            <p class="text-gray-300">Anne Fumeaux, Juliette Ganay, Eva-Louise Gasquez</p>
-                        </div>
-
-                        <div class="mb-6 border-l-4 border-golden pl-3 sm:pl-4 text-sm sm:text-base">
-                            <p class="text-gray-400"><strong>Dernières représentations :</strong></p>
-                            <p class="text-gray-100 text-lg sm:text-xl font-semibold">Du 19 septembre au 8 novembre </p>
-                            <p class="text-yellow-500 hover:text-yellow-300 active:text-yellow-600 italic underline underline-offset-4 hover:underline-offset-8"><a href="https://www.theatrelacroiseedeschemins.com/service-page/attentat-a-la-pudeur-au-purgatoire" target="_blank" rel="noopener noreferrer" class="inline-block break-words">Théâtre La Croisée des Chemins</a></p>
-                        </div>
-
-                        <details class="mb-6 rounded-lg border border-yellow-900 bg-gray-950/60 p-3 sm:p-4">
-                            <summary class="golden-accent flex cursor-pointer list-none items-center justify-between gap-3 text-base sm:text-lg font-semibold transition hover:text-yellow-300">
-                                <span>Voir toutes les séances</span>
-                                <span class="text-sm text-gray-400">16 dates</span>
-                            </summary>
-                            <div class="mt-5 grid gap-3 sm:gap-4 md:grid-cols-2">
-                                <article class="rounded-lg border border-gray-800 bg-gray-900 p-3 sm:p-4">
-                                    <p class="golden-accent text-xs font-semibold uppercase tracking-widest">ATTENTAT À LA PUDEUR</p>
-                                    <p class="mt-2 text-lg font-semibold text-gray-100 sm:text-xl">19 sept. 2026</p>
-                                    <p class="text-gray-300">19:00 - 20:00</p>
-                                    <p class="mt-2 text-sm text-gray-400">Théâtre La Croisée des Chemins</p>
-                                </article>
-                                <article class="rounded-lg border border-gray-800 bg-gray-900 p-3 sm:p-4">
-                                    <p class="golden-accent text-xs font-semibold uppercase tracking-widest">ATTENTAT À LA PUDEUR</p>
-                                    <p class="mt-2 text-lg font-semibold text-gray-100 sm:text-xl">20 sept. 2026</p>
-                                    <p class="text-gray-300">19:00 - 20:00</p>
-                                    <p class="mt-2 text-sm text-gray-400">Théâtre La Croisée des Chemins</p>
-                                </article>
-                                <article class="rounded-lg border border-gray-800 bg-gray-900 p-3 sm:p-4">
-                                    <p class="golden-accent text-xs font-semibold uppercase tracking-widest">ATTENTAT À LA PUDEUR</p>
-                                    <p class="mt-2 text-lg font-semibold text-gray-100 sm:text-xl">26 sept. 2026</p>
-                                    <p class="text-gray-300">19:00 - 20:00</p>
-                                    <p class="mt-2 text-sm text-gray-400">Théâtre La Croisée des Chemins</p>
-                                </article>
-                                <article class="rounded-lg border border-gray-800 bg-gray-900 p-3 sm:p-4">
-                                    <p class="golden-accent text-xs font-semibold uppercase tracking-widest">ATTENTAT À LA PUDEUR</p>
-                                    <p class="mt-2 text-lg font-semibold text-gray-100 sm:text-xl">27 sept. 2026</p>
-                                    <p class="text-gray-300">15:00 - 16:00</p>
-                                    <p class="mt-2 text-sm text-gray-400">Théâtre La Croisée des Chemins</p>
-                                </article>
-                                <article class="rounded-lg border border-gray-800 bg-gray-900 p-3 sm:p-4">
-                                    <p class="golden-accent text-xs font-semibold uppercase tracking-widest">ATTENTAT À LA PUDEUR</p>
-                                    <p class="mt-2 text-lg font-semibold text-gray-100 sm:text-xl">03 oct. 2026</p>
-                                    <p class="text-gray-300">19:00 - 20:00</p>
-                                    <p class="mt-2 text-sm text-gray-400">Théâtre La Croisée des Chemins</p>
-                                </article>
-                                <article class="rounded-lg border border-gray-800 bg-gray-900 p-3 sm:p-4">
-                                    <p class="golden-accent text-xs font-semibold uppercase tracking-widest">ATTENTAT À LA PUDEUR</p>
-                                    <p class="mt-2 text-lg font-semibold text-gray-100 sm:text-xl">04 oct. 2026</p>
-                                    <p class="text-gray-300">15:00 - 16:00</p>
-                                    <p class="mt-2 text-sm text-gray-400">Théâtre La Croisée des Chemins</p>
-                                </article>
-                                <article class="rounded-lg border border-gray-800 bg-gray-900 p-3 sm:p-4">
-                                    <p class="golden-accent text-xs font-semibold uppercase tracking-widest">ATTENTAT À LA PUDEUR</p>
-                                    <p class="mt-2 text-lg font-semibold text-gray-100 sm:text-xl">10 oct. 2026</p>
-                                    <p class="text-gray-300">19:00 - 20:00</p>
-                                    <p class="mt-2 text-sm text-gray-400">Théâtre La Croisée des Chemins</p>
-                                </article>
-                                <article class="rounded-lg border border-gray-800 bg-gray-900 p-3 sm:p-4">
-                                    <p class="golden-accent text-xs font-semibold uppercase tracking-widest">ATTENTAT À LA PUDEUR</p>
-                                    <p class="mt-2 text-lg font-semibold text-gray-100 sm:text-xl">11 oct. 2026</p>
-                                    <p class="text-gray-300">15:00 - 16:00</p>
-                                    <p class="mt-2 text-sm text-gray-400">Théâtre La Croisée des Chemins</p>
-                                </article>
-                                <article class="rounded-lg border border-gray-800 bg-gray-900 p-3 sm:p-4">
-                                    <p class="golden-accent text-xs font-semibold uppercase tracking-widest">ATTENTAT À LA PUDEUR</p>
-                                    <p class="mt-2 text-lg font-semibold text-gray-100 sm:text-xl">17 oct. 2026</p>
-                                    <p class="text-gray-300">19:00 - 20:00</p>
-                                    <p class="mt-2 text-sm text-gray-400">Théâtre La Croisée des Chemins</p>
-                                </article>
-                                <article class="rounded-lg border border-gray-800 bg-gray-900 p-3 sm:p-4">
-                                    <p class="golden-accent text-xs font-semibold uppercase tracking-widest">ATTENTAT À LA PUDEUR</p>
-                                    <p class="mt-2 text-lg font-semibold text-gray-100 sm:text-xl">18 oct. 2026</p>
-                                    <p class="text-gray-300">15:00 - 16:00</p>
-                                    <p class="mt-2 text-sm text-gray-400">Théâtre La Croisée des Chemins</p>
-
-                                </article>
-                                <article class="rounded-lg border border-gray-800 bg-gray-900 p-3 sm:p-4">
-                                    <p class="golden-accent text-xs font-semibold uppercase tracking-widest">ATTENTAT À LA PUDEUR</p>
-                                    <p class="mt-2 text-lg font-semibold text-gray-100 sm:text-xl">24 oct. 2026</p>
-                                    <p class="text-gray-300">19:00 - 20:00</p>
-                                    <p class="mt-2 text-sm text-gray-400">Théâtre La Croisée des Chemins</p>
-                                </article>
-                                <article class="rounded-lg border border-gray-800 bg-gray-900 p-3 sm:p-4">
-                                    <p class="golden-accent text-xs font-semibold uppercase tracking-widest">ATTENTAT À LA PUDEUR</p>
-                                    <p class="mt-2 text-lg font-semibold text-gray-100 sm:text-xl">25 oct. 2026</p>
-                                    <p class="text-gray-300">15:00 - 16:00</p>
-                                    <p class="mt-2 text-sm text-gray-400">Théâtre La Croisée des Chemins</p>
-                                </article>
-                                <article class="rounded-lg border border-gray-800 bg-gray-900 p-3 sm:p-4">
-                                    <p class="golden-accent text-xs font-semibold uppercase tracking-widest">ATTENTAT À LA PUDEUR</p>
-                                    <p class="mt-2 text-lg font-semibold text-gray-100 sm:text-xl">31 oct. 2026</p>
-                                    <p class="text-gray-300">19:00 - 20:00</p>
-                                    <p class="mt-2 text-sm text-gray-400">Théâtre La Croisée des Chemins</p>
-                                </article>
-                                <article class="rounded-lg border border-gray-800 bg-gray-900 p-3 sm:p-4">
-                                    <p class="golden-accent text-xs font-semibold uppercase tracking-widest">ATTENTAT À LA PUDEUR</p>
-                                    <p class="mt-2 text-lg font-semibold text-gray-100 sm:text-xl">01 nov. 2026</p>
-                                    <p class="text-gray-300">15:00 - 16:00</p>
-                                    <p class="mt-2 text-sm text-gray-400">Théâtre La Croisée des Chemins</p>
-                                </article>
-                                <article class="rounded-lg border border-gray-800 bg-gray-900 p-3 sm:p-4">
-                                    <p class="golden-accent text-xs font-semibold uppercase tracking-widest">ATTENTAT À LA PUDEUR</p>
-                                    <p class="mt-2 text-lg font-semibold text-gray-100 sm:text-xl">07 nov. 2026</p>
-                                    <p class="text-gray-300">19:00 - 20:00</p>
-                                    <p class="mt-2 text-sm text-gray-400">Théâtre La Croisée des Chemins</p>
-                                </article>
-                                <article class="rounded-lg border border-gray-800 bg-gray-900 p-3 sm:p-4">
-                                    <p class="golden-accent text-xs font-semibold uppercase tracking-widest">ATTENTAT À LA PUDEUR</p>
-                                    <p class="mt-2 text-lg font-semibold text-gray-100 sm:text-xl">08 nov. 2026</p>
-                                    <p class="text-gray-300">15:00 - 16:00</p>
-                                    <p class="mt-2 text-sm text-gray-400">Théâtre La Croisée des Chemins</p>
-                                </article>
-                            </div>
-                        </details>
-
-                        <a href="https://www.billetreduc.com/spectacle/attentat-a-la-pudeur-au-purgatoire-413919"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="hidden inline-block w-full rounded-full bg-golden px-8 py-3 text-center text-base font-semibold text-gray-900 transition hover:bg-yellow-600 sm:w-auto sm:text-lg">
-                            Réserver mon entrée
-                        </a>
-
-                    </div>
-                </div>
+            <div class="max-w-6xl mx-auto mb-8 md:mb-12 flex items-center gap-4">
+                <h2 class="text-sm sm:text-base font-body font-semibold uppercase tracking-[0.2em] golden-accent whitespace-nowrap">Créations passées</h2>
+                <span class="h-px flex-1 bg-gradient-to-r from-yellow-700/60 to-transparent"></span>
             </div>
+
+            <article class="max-w-6xl mx-auto mb-10 md:mb-16 scroll-reveal">
+                <div class="rounded-xl border border-yellow-900/60 bg-gray-800/40 p-4 sm:p-6 md:p-10">
+
+                    <!-- Titre -->
+                    <header class="mb-6 md:mb-8">
+                        <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-gray-50">Attentat à la pudeur. Au purgatoire.</h3>
+                        <p class="mt-2 font-display text-xl sm:text-2xl italic text-gray-300">ou «&nbsp;Je déteste l'amour. Je déteste&nbsp;la&nbsp;haine&nbsp;»</p>
+                    </header>
+
+                    <!-- Photo principale -->
+                    <figure class="mb-8 md:mb-10">
+                        <button type="button" class="spectacle-photo block w-full overflow-hidden rounded-lg" data-lightbox="0">
+                            <img src="../images/spectacle/pay-aap3.webp" alt="Deux comédiennes face à face, l'une penchée vers l'autre" class="w-full aspect-[4/3] sm:aspect-[16/9] object-cover">
+                        </button>
+                    </figure>
+
+                    <!-- Texte + fiche technique -->
+                    <div class="grid gap-8 lg:gap-12 lg:grid-cols-[minmax(0,1fr)_20rem]">
+                        <div class="max-w-prose text-base sm:text-lg text-gray-300 leading-relaxed space-y-5">
+                            <p>
+                                Une pièce de théâtre humaniste, dansante, emplie d'humour et imprégnée de performance et de créations artistiques diverses.
+                                Une œuvre pluridisciplinaire où la danse, le chant, le clown, le masque, l'expression corporelle, la peinture et la sculpture ont vocation à se rencontrer pour donner pleinement vie aux propos.
+                            </p>
+                            <p>
+                                La pièce est une fenêtre, la plus large possible, sur le monde et les gens qui nous entourent. Elle cherche à mettre en lumière chacun de nos sentiments, positif comme négatif, provoqués par nos interactions quotidiennes. C'est une introspection entre nous et nos contemporains ; une réflexion sur notre relation aux autres, à notre vision du monde et à nos ressentis, nos avis et nos engagements les plus profonds.
+                            </p>
+                        </div>
+
+                        <aside class="space-y-5">
+                            <div class="rounded-lg border-l-4 border-golden bg-gray-900/70 p-4 sm:p-5">
+                                <p class="text-xs font-semibold uppercase tracking-widest text-gray-400">Spectacle joué</p>
+                                <p class="mt-1 text-lg sm:text-xl font-semibold text-gray-100">Du 19 sept. au 8 nov. 2026</p>
+                                <a href="https://www.theatrelacroiseedeschemins.com/service-page/attentat-a-la-pudeur-au-purgatoire" target="_blank" rel="noopener noreferrer" class="mt-1 inline-block break-words text-yellow-500 underline underline-offset-4 transition hover:text-yellow-300">Théâtre La Croisée des Chemins</a>
+                            </div>
+
+                            <div class="rounded-lg bg-gray-900/70 p-4 sm:p-5">
+                                <p class="mb-3 text-xs font-semibold uppercase tracking-widest golden-accent">Fiche technique</p>
+                                <dl class="fiche-technique text-sm sm:text-base">
+                                    <div><dt>Texte &amp; mise en scène</dt><dd>Mathis Meteau</dd></div>
+                                    <div><dt>Distribution</dt><dd>Anne Fumeaux, Juliette Ganay, Eva-Louise Gasquez</dd></div>
+                                    <div><dt>Musique originale</dt><dd>Rubber Circée</dd></div>
+                                    <div><dt>Durée</dt><dd>1h15 max</dd></div>
+                                    <div><dt>Public</dt><dd>Tout public, dès 12 ans</dd></div>
+                                </dl>
+                            </div>
+                        </aside>
+                    </div>
+
+                    <!-- Galerie -->
+                    <div class="mt-10 md:mt-14">
+                        <div class="mb-4 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                            <h4 class="text-2xl sm:text-3xl font-semibold text-gray-100">En images</h4>
+                            <p class="text-sm text-gray-400">Photos : Matthieu le Jeune (@juste_matthieu_)</p>
+                        </div>
+                        <div class="columns-2 md:columns-3 gap-3 sm:gap-4">
+                            <button type="button" class="spectacle-photo mb-3 sm:mb-4 block w-full overflow-hidden rounded-lg break-inside-avoid" data-lightbox="1"><img src="../images/spectacle/pay-aap7.webp" alt="Deux comédiennes allongées sur des cubes de scène" loading="lazy" class="w-full h-auto"></button>
+                            <button type="button" class="spectacle-photo mb-3 sm:mb-4 block w-full overflow-hidden rounded-lg break-inside-avoid" data-lightbox="2"><img src="../images/spectacle/por-aap1.webp" alt="Une comédienne penchée sur une autre, étendue au sol" loading="lazy" class="w-full h-auto"></button>
+                            <button type="button" class="spectacle-photo mb-3 sm:mb-4 block w-full overflow-hidden rounded-lg break-inside-avoid" data-lightbox="3"><img src="../images/spectacle/pay-aap4.webp" alt="Une comédienne à genoux, une autre debout, un ours en peluche en l'air" loading="lazy" class="w-full h-auto"></button>
+                            <button type="button" class="spectacle-photo mb-3 sm:mb-4 block w-full overflow-hidden rounded-lg break-inside-avoid" data-lightbox="4"><img src="../images/spectacle/pay-aap6.webp" alt="Une comédienne aux cheveux bouclés devant un rideau rouge" loading="lazy" class="w-full h-auto"></button>
+                            <button type="button" class="spectacle-photo mb-3 sm:mb-4 block w-full overflow-hidden rounded-lg break-inside-avoid" data-lightbox="5"><img src="../images/spectacle/pay-aap5.webp" alt="Une comédienne en haut à paillettes bleu et lunettes de soleil" loading="lazy" class="w-full h-auto"></button>
+                            <button type="button" class="spectacle-photo mb-3 sm:mb-4 block w-full overflow-hidden rounded-lg break-inside-avoid" data-lightbox="6"><img src="../images/spectacle/por-aap2.webp" alt="Deux comédiennes qui rient, l'une assise à une table" loading="lazy" class="w-full h-auto"></button>
+                            <button type="button" class="spectacle-photo mb-3 sm:mb-4 block w-full overflow-hidden rounded-lg break-inside-avoid" data-lightbox="7"><img src="../images/spectacle/pay-aap8.webp" alt="Une comédienne assise au sol, de la peinture jaune répandue autour d'elle" loading="lazy" class="w-full h-auto"></button>
+                        </div>
+                    </div>
+
+                    <!-- Archive des séances -->
+                    <details class="mt-8 md:mt-10 rounded-lg border border-gray-700 bg-gray-900/60 p-4 sm:p-5">
+                        <summary class="flex cursor-pointer list-none items-center justify-between gap-3 text-base sm:text-lg font-semibold golden-accent transition hover:text-yellow-300">
+                            <span>Toutes les séances</span>
+                            <span class="text-sm font-normal text-gray-400">16 dates</span>
+                        </summary>
+                        <p class="mt-3 text-sm text-gray-400">Théâtre La Croisée des Chemins · samedis 19:00, dimanches 15:00</p>
+                        <div class="mt-4 grid gap-5 sm:grid-cols-3">
+                            <div>
+                                <p class="mb-2 text-sm font-semibold uppercase tracking-widest text-gray-300">Septembre</p>
+                                <ul class="seances">
+                                    <li>sam. 19 <span>19:00</span></li>
+                                    <li>dim. 20 <span>15:00</span></li>
+                                    <li>sam. 26 <span>19:00</span></li>
+                                    <li>dim. 27 <span>15:00</span></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="mb-2 text-sm font-semibold uppercase tracking-widest text-gray-300">Octobre</p>
+                                <ul class="seances">
+                                    <li>sam. 3 <span>19:00</span></li>
+                                    <li>dim. 4 <span>15:00</span></li>
+                                    <li>sam. 10 <span>19:00</span></li>
+                                    <li>dim. 11 <span>15:00</span></li>
+                                    <li>sam. 17 <span>19:00</span></li>
+                                    <li>dim. 18 <span>15:00</span></li>
+                                    <li>sam. 24 <span>19:00</span></li>
+                                    <li>dim. 25 <span>15:00</span></li>
+                                    <li>sam. 31 <span>19:00</span></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="mb-2 text-sm font-semibold uppercase tracking-widest text-gray-300">Novembre</p>
+                                <ul class="seances">
+                                    <li>dim. 1 <span>15:00</span></li>
+                                    <li>sam. 7 <span>19:00</span></li>
+                                    <li>dim. 8 <span>15:00</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </details>
+
+                </div>
+            </article>
         </div>
     </section>
 
-
+    <!-- Visionneuse photos -->
+    <dialog id="lightbox" class="lightbox" aria-label="Photos du spectacle">
+        <div class="lightbox-inner">
+            <img id="lightbox-img" src="" alt="">
+            <p id="lightbox-caption" class="lightbox-caption"></p>
+            <button type="button" class="lightbox-btn lightbox-close" data-lightbox-close aria-label="Fermer">&times;</button>
+            <button type="button" class="lightbox-btn lightbox-prev" data-lightbox-prev aria-label="Photo précédente">&#8249;</button>
+            <button type="button" class="lightbox-btn lightbox-next" data-lightbox-next aria-label="Photo suivante">&#8250;</button>
+        </div>
+    </dialog>
 
     <!-- Footer -->
     <footer class="bg-gray-900 border-t border-gray-800 py-6">
